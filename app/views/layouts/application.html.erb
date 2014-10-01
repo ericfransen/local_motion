@@ -13,8 +13,10 @@
 
   <body>
 
-
-    <%= yield %>
-    <%= javascript_include_tag "application" %>
+    <div class='container'>
+      <%= render partial: 'layouts/navbar' %>
+      <%= yield %>
+      <%= javascript_include_tag "application" %>
+    </div>
   </body>
 </html>
