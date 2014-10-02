@@ -17,3 +17,19 @@
  @import "foundation_and_overrides";
 
  */
+
+
+.welcome {
+   background: url(http://static.pexels.com/wp-content/uploads/2014/06/city-crossing-man-447.jpg) center center fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#sign_up_button {
+  margin-left: auto;
+  margin-right: auto;
+  /*margin: auto;*/
+  width: 12%;
+}
