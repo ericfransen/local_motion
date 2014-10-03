@@ -1,28 +1,131 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### [LocalMotion]
 
-Things you may want to cover:
+#### Pitch
 
-* Ruby version
+The Kayak of local travel.
+See all ride sharing options in your immediate area.
+
+#### Description
+
+The emergence of numerous community-based transportation options (i.e., ride
+sharing) is great yet with people having memberships to many of the offered services,
+it can be difficult to compare and choose the best option at any given time and
+location.
+
+This app will aggregate all Denver ride sharing options within a one to two mile
+radius of the user such as Uber, Lyft, B-Cycle, and Car2Go.  The results will be
+filterable by distance and/or price and show the best route between the user and
+their final destination.
+
+#### Target Audience
+
+This application will be geared toward Denverites who take advantage of local
+travel ride sharing options and attempt to maintain a low-carbon footprint.
+
+#### Integrations
+
+* OAuth provider:
+  Uber OAuth
+
+* Data.gov data & API use:
+- Uber API
+- Car2Go API
+- B-Cycle API
+- http://data.opencolorado.org/dataset/city-and-county-of-denver-b-cycle-stations
+
+* Other integrations:
+Google Maps
+
+### Technical Expectations
+
+* must use an external OAuth provider to authenticate users
+* must expose a JSON API that allows a user to both read and write data
+* must filter data appropriately in both the web and API based on authorization rules
+* must create a Ruby gem which allows a user to easily interact with your API
+* must make use of a Virtual Private Server to host your application
+* must automate the deployment of your application to a single command
+* application must accept uploads of some user images
+* application must manipulate those images to suit the layout/style of the app itself
+* use of background workers for all appropriate tasks
+* send notifications to users over email
+* receive some form of content from users via email
+
+# Iteration Plan:
+
+# 10/6
+## NEED
+- OAuth
+- Google Maps Integration
+- User can enter final destination
+
+# 10/9
+## NEED
+- OAuth
+- User can enter starting destination
+- User can enter final destination
+- Can map all B-Cycles on map
+- Can map all Car2Gos on map
+
+
+# 10/13
+## NEED
+- OAuth
+- App will request to use the user's location (user can also enter it)
+- User can enter final destination
+- Can map all B-Cycles on map
+- Can map all Car2Gos on map
+- Can display whole trip time (time walking to bike (B-Cycle)/ walking to car
+(Car2Go)/waiting time(UBER))
+
+
+# 10/16
+## NEED
+- OAuth
+- App will request to use the user's location (user can also enter it)
+- User can enter final destination
+- Can map all B-Cycles on map
+- Can map all Car2Gos on map
+- Can display whole trip time (time walking to bike (B-Cycle)/ walking to car
+(Car2Go)/waiting time(UBER))
+- Can display trip price estimate for each mode of travel
+- User can click on map markers to display walking directions to them (complete
+with walking time and price)
+
+## NICE
+- Mobile optimization & responsive design
+- Rewards based program for use (1 pt - chauffeur, 2 pt - drive [electric],
+3 pt - bike) (rewards given once you check into final destination)
+- App asynchronously making API calls with background workers
+
+
+
+
+
+# Details
+
+* Ruby version 2.1.2
 
 * System dependencies
 
 * Configuration
 
 * Database creation
+```
+rake db:create
+```
 
 * Database initialization
+```
+rake db:migrate
+```
 
 * How to run the test suite
+```
+bundle exec rspec
+```
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
