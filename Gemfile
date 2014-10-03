@@ -11,9 +11,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
+# gem 'spring',        group: :development
 gem 'unicorn'
 gem 'foundation-rails'
+gem 'omniauth'
+gem 'omniauth-uber'
+gem 'figaro'
+gem 'binding_of_caller'
 
 # gem 'thin'
 # gem 'bcrypt', '~> 3.1.7'
