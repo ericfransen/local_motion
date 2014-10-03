@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Local Motion" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -15,13 +15,8 @@
 
     <div class='container'>
       <%= render partial: 'layouts/navbar' %>
-      <% flash.each do |name, msg| %>
-        <%= content_tag(:div, msg, class: "alert alert-info") %>
-      <% end %>
-
       <%= yield %>
       <%= javascript_include_tag "application" %>
-
     </div>
   </body>
 </html>

@@ -26,8 +26,5 @@ module LocalMotion
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-
-    # Eric, you may not need this (usually only for rails 3.2...
-    config.assets.initialize_on_precompile = false
   end
 end
