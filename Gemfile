@@ -18,6 +18,8 @@ gem 'omniauth'
 gem 'omniauth-uber'
 gem 'figaro'
 gem 'binding_of_caller'
+gem 'skylight'
+gem 'coveralls', require: false
 
 # gem 'thin'
 # gem 'bcrypt', '~> 3.1.7'
