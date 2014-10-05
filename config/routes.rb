@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
-  get 'pages/home'
+  # get 'pages/home'
 
   root 'pages#home'
 
   get "home" => "pages#home"
   get "about" => "pages#about"
-  get "/auth/:provider/callback" => "sessions#create"
+  get "account" => "pages#account"
+  get "index" => "pages#index"
+
+  get "/auth/:provider/callback", to: "sessions#create"
+  get "/auth/failure", to: "sessions#omniauth_failure"
   get "/signout" => "sessions#destroy", :as => :signout
 
   # The priority is based upon order of creation: first created -> highest priority.
