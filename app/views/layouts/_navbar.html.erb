@@ -15,12 +15,12 @@
         <li class="has-dropdown">
           <a href="#">Welcome <%= current_user.first_name %></a>
           <ul class="dropdown">
-            <li><a href="#">account</a></li>
+            <li><%= link_to "account", account_path(current_user) %></li>
+            <!-- <li><a href="/account">account</a></li> -->
             <li class="active"><a href="/signout">sign out</a></li>
           </ul>
         </li>
       </ul>
-
 
     <% else %>
       <ul class="right">

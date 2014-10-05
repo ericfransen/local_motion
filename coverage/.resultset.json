@@ -223,12 +223,15 @@
       ],
       "/Users/ericfransen/Dropbox/turing/projects/local_motion/config/routes.rb": [
         1,
-        1,
+        null,
         null,
         1,
         null,
         1,
         1,
+        1,
+        1,
+        null,
         1,
         1,
         1,
@@ -308,6 +311,12 @@
         null,
         1,
         null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
         null
       ],
       "/Users/ericfransen/Dropbox/turing/projects/local_motion/app/controllers/application_controller.rb": [
@@ -319,7 +328,7 @@
         1,
         null,
         1,
-        5,
+        6,
         null,
         null
       ],
@@ -339,6 +348,11 @@
         1,
         1,
         1,
+        1,
+        1,
+        null,
+        0,
+        null,
         null,
         null,
         1,
@@ -430,6 +444,13 @@
         1,
         null
       ],
+      "/Users/ericfransen/Dropbox/turing/projects/local_motion/spec/views/pages/account.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
       "/Users/ericfransen/Dropbox/turing/projects/local_motion/spec/views/pages/home.html.erb_spec.rb": [
         1,
         null,
@@ -453,6 +474,6 @@
         null
       ]
     },
-    "timestamp": 1412471569
+    "timestamp": 1412526968
   }
 }

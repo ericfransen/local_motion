@@ -4,4 +4,10 @@ class PagesController < ApplicationController
 
   def about
   end
+
+  def account
+  end
+
+  def index
+  end
 end
