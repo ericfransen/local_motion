@@ -328,7 +328,7 @@
         1,
         null,
         1,
-        6,
+        7,
         null,
         null
       ],
@@ -363,6 +363,17 @@
         0,
         0,
         null,
+        null,
+        null
+      ],
+      "/Users/ericfransen/Dropbox/turing/projects/local_motion/spec/features/map_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -474,6 +485,6 @@
         null
       ]
     },
-    "timestamp": 1412526968
+    "timestamp": 1412650354
   }
 }

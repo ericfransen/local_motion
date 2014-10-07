@@ -34,3 +34,22 @@
   /*margin: auto;*/
   // width: 10%;
 }
+
+.show_map {
+  position: fixed;
+  top: 45px;
+  bottom: 0px;
+  right: 500px;
+  left: 0px;
+}
+
+#sidebar {
+  // position: fixed;
+  float: right;
+  padding: 0 20px 0 20px;
+  top: 45px;
+  bottom: 0px;
+  width: 500px;
+  background: red;
+  // overflow-y: auto;
+}
