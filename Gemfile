@@ -18,7 +18,7 @@ gem 'omniauth'
 gem 'omniauth-uber'
 gem 'figaro'
 gem 'binding_of_caller'
-gem 'skylight'
+gem 'skylight', '~> 0.3.20'
 gem 'coveralls', require: false
 
 # gem 'thin'
