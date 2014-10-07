@@ -304,6 +304,60 @@
         1,
         null
       ],
+      "/Users/ericfransen/Dropbox/turing/projects/local_motion/db/schema.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/ericfransen/Dropbox/turing/projects/local_motion/app/controllers/pages_controller.rb": [
         1,
         1,
@@ -441,6 +495,17 @@
         1,
         null
       ],
+      "/Users/ericfransen/Dropbox/turing/projects/local_motion/spec/models/b_cycle_stations_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/ericfransen/Dropbox/turing/projects/local_motion/app/models/b_cycle_stations.rb": [
+        1,
+        null
+      ],
       "/Users/ericfransen/Dropbox/turing/projects/local_motion/spec/models/user_spec.rb": [
         1,
         null,
@@ -485,6 +550,6 @@
         null
       ]
     },
-    "timestamp": 1412650354
+    "timestamp": 1412699276
   }
 }
