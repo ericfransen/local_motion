@@ -7,12 +7,12 @@ task :import => [:environment] do
 
   CSV.foreach(file, :headers => true) do |row|
     BCycleStations.create({
-      :station_name => row[1],
-      :num_docks => row[4],
-      :address_line1 => row[7],
-      :city => row[9],
-      :state => row[10],
-      :zip => row[11]
+      :station_name => row[0],
+      :num_docks => row[3],
+      :address_line1 => row[6],
+      :city => row[8],
+      :state => row[9],
+      :zip => row[10]
     })
   end
 
