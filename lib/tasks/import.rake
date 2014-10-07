@@ -3,9 +3,21 @@ require 'csv'
 desc "Import Denver B-Cycle station locations from CSV file"
 task :import => [:environment] do
 
-  file = "db/b_cycle_stations.csv"
+  puts "Getting B-Cycle locations from website..."
 
-  CSV.foreach(file, :headers => true) do |row|
+  b_cycle_station_locations = HTTParty.get("http://data.denvergov.org/download/gis/b_cycle_stations/csv/b_cycle_stations.csv")
+
+  puts "Done."
+  puts "Saving to file..."
+
+  File.open('./tmp/b_cycle_station_locations.csv', 'w') do |f|
+    f.write b_cycle_station_locations.body
+  end
+
+  puts "Done."
+  puts "Storing locations into database..."
+
+  CSV.foreach('./tmp/b_cycle_station_locations.csv', :headers => true) do |row|
     BCycleStations.create({
       :station_name => row[0],
       :num_docks => row[3],
@@ -16,6 +28,9 @@ task :import => [:environment] do
     })
   end
 
+  puts "Done."
+
 end
 
+# run with $rake import
 # STATION_NAME,STATION_ADDRESS,PROPERTY_TYPE,NUM_DOCKS,POWER_TYPE,ADDRESS_ID,ADDRESS_LINE1,ADDRESS_LINE2,CITY,STATE,ZIP,STATUS

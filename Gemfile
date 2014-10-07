@@ -20,6 +20,7 @@ gem 'figaro'
 gem 'binding_of_caller'
 gem 'skylight', '~> 0.3.20'
 gem 'coveralls', require: false
+gem 'httparty'
 
 # gem 'thin'
 # gem 'bcrypt', '~> 3.1.7'

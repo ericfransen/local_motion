@@ -1,0 +1,85 @@
+STATION_NAME,STATION_ADDRESS,PROPERTY_TYPE,NUM_DOCKS,POWER_TYPE,ADDRESS_ID,ADDRESS_LINE1,ADDRESS_LINE2,CITY,STATE,ZIP,STATUS
+Market Street Station,"1600 Market Street, Denver CO 80202",RTD,21.0,Wired Only,0,1600 Market St,,Denver,CO,80202,Existing
+9th and Santa Fe,"923 W 9th Ave, Denver, CO 80204",Public,15.0,Solar Only,69269,923 W 9th Ave,,Denver,CO,80204,Existing
+Louisiana Pearl Light Rail,"1300 S Washington St, Denver CO 80210",RTD,15.0,Solar Only,0,1300 S Washington St,,Denver,CO,80210,Existing
+16th and Platte,"1601 Platte St, Denver CO 80202",Public,19.0,Solar Only,450477,1601 Platte St,,Denver,CO,80202,Existing
+19th and Pearl,"620 E 19th Ave, Denver, CO 80203",Private,23.0,Wired Only,0,620 E 19th Ave,,Denver,CO,80203,Existing
+7th and Grant,"721 Grant St, Denver, CO 80203",Public,15.0,Solar Only,0,721 Grant St,,Denver,CO,80203,Existing
+1551 Lafayette,"1551 Lafayette St, Denver, CO 80218",Public,17.0,Solar Only,0,1551 Lafayette St,,Denver,CO,80218,Existing
+16th and Broadway,"1600 Broadway, Denver CO 80202",Private,11.0,Wired Only,55719,1600 Broadway,,Denver,CO,80202,Existing
+Bayaud and Emerson,"910 E Bayaud Ave, Denver, CO 80209",Public,19.0,Solar Only,0,910 E Bayaud Ave,,Denver,CO,80209,Existing
+Buchtel and High Light Rail,"1901 Buchtel Blvd, Denver CO 80210",RTD,19.0,Solar Only,173983,1901 Buchtel Blvd,,Denver,CO,80210,Existing
+Denver Museum of Nature and Science,"2001 Colorado Blvd,  Denver, CO 80205",Parks and Rec,21.0,Solar Only,222144,2001 Colorado Blvd,,Denver,CO,80205,Existing
+13th and Pearl,"1291 Pearl St, Denver CO 80203",Private,13.0,Wired Only,66900,1291 Pearl St,,Denver,CO,80203,Existing
+Denver Public Library,"100 W 13th Ave, Denver CO 80204",Private,19.0,Wired Only,166850,100 W 13th Ave,,Denver,CO,80204,Existing
+Denver Zoo,"2300 Steele St, Denver, CO 80205",Parks and Rec,22.0,Solar Only,0,2300 Steele St,,Denver,CO,80205,Existing
+16th and Little Raven,"1600 Little Raven, Denver, CO 80202",Parks and Rec,13.0,Solar Only,0,1600 Little Raven,,Denver,CO,80202,Existing
+11th and Broadway,"1085 Broadway, Denver CO 80204",Private,11.0,Wired Only,67892,1085 Broadway,,Denver,CO,80204,Existing
+10th and Osage,"1005 Osage St, Denver, CO 80204",Public,15.0,Solar Only,0,1005 Osage St,,Denver,CO,80204,Existing
+1st and Broadway,"10 W 1st Ave, Denver, CO  80223",Private,22.0,Solar Only,350580,10 W 1st Ave,,Denver,CO,80223,Existing
+18th and California,"1799 California St, Denver, CO 80202",Public,11.0,Wired Only,0,1799 California St,,Denver,CO,80202,Existing
+9th and Curtis,"899 Curtis St, Denver, CO 80204",Private,17.0,Solar Only,0,899 Curtis St,,Denver,CO,80204,Existing
+15th and Curtis,"1501 Curtis St, Denver, CO 80202",Public,15.0,Solar Only,0,1501 Curtis St,,Denver,CO,80202,Existing
+1550 Glenarm,"1550 Glenarm Pl, Denver, CO 80202",Public,13.0,Wired Only,0,1550 Glenarm Pl,,Denver,CO,80202,Existing
+12th and Sherman,"1220 Sherman St, Denver, CO 80203",Private,13.0,Wired Only,0,1220 Sherman St,,Denver,CO,80203,Existing
+17th and Downing,"1100 E 17th Ave, Denver, CO 80218",Public,15.0,Solar Only,189441,1100 E 17th Ave,,Denver,CO,80218,Existing
+9th and Downing,"920 Downing St, Denver, CO 80218",Public,11.0,Solar Only,0,920 Downing St,,Denver,CO,80218,Existing
+2045 Franklin,"2045 Franklin St, Denver, CO 80205",Public,13.0,Wired Only,57320,2045 Franklin St,,Denver,CO,80205,Existing
+Ellsworth and Madison,"10 S Madison St, Denver, CO 80209",Private,11.0,Wired Only,171814,10 S Madison St,,Denver,CO,80209,Existing
+32nd and Clay,"3199 Clay St, Denver, CO 80211",Private,18.0,Solar Only,0,3199 Clay St,,Denver,CO,80211,Existing
+Denver Health,"777 Bannock St, Denver, CO 80204",Private,11.0,Wired Only,67719,777 Bannock St,,Denver,CO,80204,Existing
+Cherry Creek Mall,"2800 E 1st Ave, Denver, CO 80206",Parks and Rec,15.0,Solar Only,0,2800 E 1st Ave,,Denver,CO,80206,Existing
+28th and Larimer,"2751 Larimer St, Denver, CO 80206",Private,9.0,Wired Only,43178,2751 Larimer St,,Denver,CO,80206,Existing
+Florida and S Pearl,"650 E Florida Ave., Denver CO 80210",Public,9.0,Wired Only,0,650 E Florida Ave,,Denver,CO,80210,Existing
+16th and Sherman,"1625 Sherman St, Denver, CO 80203",Public,13.0,Solar Only,0,1625 Sherman St,,Denver,CO,80203,Existing
+22nd and Market,"2200 Market St, Denver CO 80205",Public,13.0,Wired Only,43418,2200 Market St,,Denver,CO,80205,Existing
+Broadway and Walnut,"2490 N Broadway St, Denver CO 80205",Public,13.0,Solar Only,0,2490 N Broadway,,Denver,CO,80205,Existing
+12th and Columbine,"2502 E 12th Ave, Denver, CO 80206",Public,13.0,Solar Only,0,2502 E 12th Ave,,Denver,CO,80206,Existing
+1450 Wazee,"1450 Wazee St, Denver CO 80202",Public,11.0,Wired Only,0,1450 Wazee St,,Denver,CO,80202,Existing
+9th and Logan,"899 Logan St, Denver, CO 80203",Multiple Owners,15.0,Wired Only,68252,899 Logan St,,Denver,CO,80203,Existing
+13th and Marion,"1279 Marion St, Denver, CO 80218",Public,15.0,Solar Only,353104,1279 Marion St,,Denver,CO,80218,Existing
+13th and Speer,"1301 Speer Blvd, Denver, CO 80204",Public,17.0,Solar Only,221851,1301 Speer Blvd,,Denver,CO,80204,Existing
+17th and Franklin,"1695 Franklin St, Denver, CO 80218",Public,14.0,Solar Only,0,1695 Franklin St,,Denver,CO,80218,Existing
+18th and Arapahoe,"1800 Arapahoe St, Denver, CO 80202",Private,18.0,Wired Only,352782,1800 Arapahoe St,,Denver,CO,80202,Existing
+Union Station Light Rail at 17th St,"2050 17th St, Denver CO 80202",RTD,17.0,Wired Only,270493,2050 17th St,,Denver,CO,80202,Existing
+Louisiana and Franklin,"1600 E Louisiana Ave, Denver, CO 80210",Private,18.0,Solar Only,0,1600 E Louisiana Ave,,Denver,CO,80210,Existing
+17th and Curtis,"950 17th St, Denver CO 80202",Private,19.0,Wired Only,55167,950 17th St,,Denver,CO,80202,Existing
+Colfax and Columbine,"2451 E Colfax Ave, Denver CO 80206",Public,15.0,Solar Only,0,2451 E Colfax Ave,,Denver,CO,80206,Existing
+14th and Welton,"890 14th St, Denver, CO 80202",Private,19.0,Wired Only,271000,890 14th St,,Denver,CO,80202,Existing
+17th and Blake,"1509 17th St, Denver, CO 80202",Public,19.0,Solar Only,0,1509 17th St,,Denver,CO,80202,Existing
+15th and Delgany,"1515 Delgany St, Denver CO 80202",Public,7.0,Wired Only,231957,1515 Delgany St,,Denver,CO,80202,Existing
+16th and Boulder,"1615 Boulder St, Denver CO 80211",Public,15.0,Solar Only,45048,1615 Boulder St,,Denver,CO,80211,Existing
+11th and Emerson,"900 E 11th Ave, Denver, CO 80218",Public,11.0,Solar Only,65713,900 E 11th Ave,,Denver,CO,80218,Existing
+17th and Race,"2001 E 17th Ave, Denver, CO 80206",Public,15.0,Wired Only,260560,2001 E 17th Ave,,Denver,CO,80206,Existing
+19th and Wynkoop,"1900 Wynkoop St, Denver, CO 80202",Private,11.0,Solar Only,0,1900 Wynkoop St,,Denver,CO,80202,Existing
+6th and Clarkson,"771 E 6th Ave, Denver, CO 80203",Public,17.0,Solar Only,0,771 E 6th Ave,,Denver,CO,80203,Existing
+Colfax and Gaylord,"1490 Gaylord St, Denver, CO 80206",Public,15.0,Solar Only,0,1490 Gaylord St,,Denver,CO,80206,Existing
+4th and Walnut,"398 Walnut St, Denver, CO 80204",Private,9.0,Wired Only,0,398 Walnut St,,Denver,CO,80204,Existing
+Five Points,"2700 Welton St, Denver, CO 80205",Private,7.0,Wired Only,0,2700 Welton St,,Denver,CO,80205,Existing
+Webb Building,"201 W Colfax Ave, Denver CO 80202",Private,11.0,Wired Only,168091,201 W Colfax Ave,,Denver,CO,80202,Existing
+3rd and Milwaukee,"299 Milwaukee St, Denver, CO 80206",Private,15.0,Wired Only,180776,299 Milwaukee St,,Denver,CO,80206,Existing
+Colfax and Steele,"1509 Steele St, Denver, CO 80206",Public,22.0,Solar Only,0,1509 Steele St,,Denver,CO,80206,Existing
+32nd and Julian,"3199 Julian St, Denver, CO 80211",Public,23.0,Solar Only,0,3199 Julian St,,Denver,CO,80211,Existing
+14th and Ogden,"1425 Ogden St, Denver, CO 80218",Public,13.0,Solar Only,0,1425 Ogden St,,Denver,CO,80218,Existing
+Denver Botanic Gardens,"1151 York St, Denver, CO 80206",Parks and Rec,19.0,Wired Only,65003,1151 York St,,Denver,CO,80206,Existing
+14th and Champa,"700 14th St, Denver CO 80202",Private,23.0,Wired Only,54218,700 14th St,,Denver,CO,80202,Existing
+20th and Chestnut,"2095 Chestnut Pl, Denver, CO 80202",Public,15.0,Solar Only,0,2095 Chestnut Pl,,Denver,CO,80202,Existing
+15th and Cleveland,"101 W Colfax Ave, Denver, CO 80202",Private,11.0,Wired Only,181604,101 W Colfax Ave,,Denver,CO,80202,Existing
+14th and Elati,"400 W 14th Ave, Denver CO 80204",Private,11.0,Solar Only,390118,400 W 14th Ave,,Denver,CO,80204,Existing
+Bayaud and Pennsylvania,"525 E Bayaud Ave, Denver, CO 80209",Public,11.0,Solar Only,0,525 E Bayaud Ave,,Denver,CO,80209,Existing
+17th and Pearl,"523 E 17th Ave, Denver, CO 80203",Multiple Owners,17.0,Solar Only,55524,523 E 17th Ave,,Denver,CO,80203,Existing
+17th and Larimer,"1281 17th St, Denver, CO 80202",Private,15.0,Wired Only,0,1281 17th St,,Denver,CO,80202,Existing
+19th and Market,"1899 Market St, Denver CO 80202",Public,15.0,Solar Only,388103,1899 Market St,,Denver,CO,80202,Existing
+23rd and Clay,"2301 Clay St, Denver, CO 80211",Public,13.0,Solar Only,52393,2301 Clay St,,Denver,CO,80211,Existing
+Colfax and Garfield,"1535 Garfield St, Denver, CO 80206",Public,17.0,Solar Only,0,1535 Garfield St,,Denver,CO,80206,Existing
+17th St and Tejon,"2701 17th St, Denver, CO 80211",Public,17.0,Solar Only,0,2701 17th St,,Denver,CO,80211,Existing
+Park Ave West and Tremont,"355 Park Ave W, Denver CO 80205",Private,15.0,Solar with Wire Backup,0,355 Park Ave W,,Denver,CO,80205,Existing
+REI,"1416 Platte St, Denver, CO 80202",Private,19.0,Solar with Wire Backup,54126,1416 Platte St,,Denver,CO,80202,Existing
+22nd and Pennsylvania,"301 22nd St, Denver, CO 80205",Private,15.0,Solar with Wire Backup,0,301 22nd St,,Denver,CO,80205,Existing
+1350 Larimer,"1350 Larimer St, Denver CO 80202",Parks and Rec,15.0,Solar with Wire Backup,0,1350 Larimer St,,Denver,CO,80202,Existing
+25th and Lawrence,"2500 Lawrence St, Denver, CO 80205",Private,9.0,Solar with Wire Backup,378978,2500 Lawrence St,,Denver,CO,80205,Existing
+Pepsi Center,"1000 Chopper Cir, Denver, CO 80204",Private,17.0,Solar with Wire Backup,170593,1000 Chopper Cir,,Denver,CO,80204,Existing
+DU Driscoll Center,"2000 E Asbury Ave, Denver CO",Private,15.0,Solar with Wire Backup,176621,2000 E Asbury Ave,,Denver,CO,80210,Existing
+33rd and Arapahoe,"3310 Arapahoe St, Denver, CO 80205",Public,13.0,Wired Only,0,3310 Arapahoe St,,Denver,CO,80205,Existing
+29th and Zuni,"2417 W 29th Ave, Denver, Colorado 80211",Public,17.0,Solar Only,174301,2417 W 29th Ave,,Denver,CO,80211,Planned
+11th and Delaware,"1095 Deleware St, Denver, CO 80204",Public,13.0,Solar Only,0,1095 Deleware St,,Denver,CO,80204,Existing

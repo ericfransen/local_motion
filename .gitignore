@@ -17,6 +17,3 @@
 
 # Ignore application configuration
 /config/application.yml
-
-#Ignore imported CSV for B-Cycles
-/db/b_cycle_stations.csv
