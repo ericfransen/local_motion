@@ -21,6 +21,7 @@ gem 'binding_of_caller'
 gem 'skylight', '~> 0.3.20'
 gem 'coveralls', require: false
 gem 'httparty'
+gem 'geocoder'
 
 # gem 'thin'
 # gem 'bcrypt', '~> 3.1.7'
@@ -38,6 +39,11 @@ group :development, :test do
   # gem 'binding_of_caller'
   # gem 'guard-rspec'
   # gem 'seed_dump'
+end
+
+group :test do
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do

@@ -1,7 +1,7 @@
 require 'csv'
 
 desc "Import Denver B-Cycle station locations from CSV file"
-task :import => [:environment] do
+task :import_bcycle => [:environment] do
 
   puts "Getting B-Cycle locations from website..."
 
@@ -18,7 +18,7 @@ task :import => [:environment] do
   puts "Storing locations into database..."
 
   CSV.foreach('./tmp/b_cycle_station_locations.csv', :headers => true) do |row|
-    BCycleStations.create({
+    BCycleStation.create({
       :station_name => row[0],
       :num_docks => row[3],
       :address_line1 => row[6],
@@ -32,5 +32,5 @@ task :import => [:environment] do
 
 end
 
-# run with $rake import
+# run with $rake import_bcycle
 # STATION_NAME,STATION_ADDRESS,PROPERTY_TYPE,NUM_DOCKS,POWER_TYPE,ADDRESS_ID,ADDRESS_LINE1,ADDRESS_LINE2,CITY,STATE,ZIP,STATUS
