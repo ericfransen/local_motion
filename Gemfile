@@ -40,6 +40,11 @@ group :development, :test do
   # gem 'seed_dump'
 end
 
+group :test do
+  gem 'vcr'
+  gem 'webmock'
+end
+
 group :development do
   gem 'better_errors'
 end

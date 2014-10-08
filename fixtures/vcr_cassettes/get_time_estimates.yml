@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.uber.com/v1/estimates/time?server_token=W8mj7gOB352uCkBNL6GvvK4YyC-RoUc__M10whtP&start_latitude=37.775818&start_longitude=-122.418028
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 08 Oct 2014 01:27:03 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '524'
+      Connection:
+      - keep-alive
+      X-Rate-Limit-Remaining:
+      - '986'
+      Content-Language:
+      - en
+      Etag:
+      - '"f921143329cdc6c6c1a3f24014a958603f982573"'
+      X-Rate-Limit-Reset:
+      - '1412733600'
+      X-Rate-Limit-Limit:
+      - '1000'
+      X-Uber-App:
+      - uberex-nonsandbox
+      Strict-Transport-Security:
+      - max-age=2592000
+    body:
+      encoding: UTF-8
+      string: '{"times":[{"localized_display_name":"uberX","estimate":59,"display_name":"uberX","product_id":"a1111c8c-c720-46c3-8534-2fcdd730040d"},{"localized_display_name":"uberXL","estimate":312,"display_name":"uberXL","product_id":"821415d8-3bd5-4e27-9604-194e4359a449"},{"localized_display_name":"UberBLACK","estimate":148,"display_name":"UberBLACK","product_id":"d4abaae7-f4d6-4152-91cc-77523e8165a4"},{"localized_display_name":"UberSUV","estimate":148,"display_name":"UberSUV","product_id":"8920cb5e-51a4-4fa4-acdf-dd86c5e18ae0"}]}'
+    http_version: 
+  recorded_at: Wed, 08 Oct 2014 01:27:03 GMT
+recorded_with: VCR 2.9.3
