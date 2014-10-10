@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141007164007) do
+ActiveRecord::Schema.define(version: 20141010001829) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,30 @@ ActiveRecord::Schema.define(version: 20141007164007) do
     t.float    "latitude"
     t.float    "longitude"
   end
+
+  create_table "locations", force: true do |t|
+    t.integer  "trip_segment_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "locations", ["trip_segment_id"], name: "index_locations_on_trip_segment_id", using: :btree
+
+  create_table "trip_segments", force: true do |t|
+    t.integer  "trip_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "trip_segments", ["trip_id"], name: "index_trip_segments_on_trip_id", using: :btree
+
+  create_table "trips", force: true do |t|
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "trips", ["user_id"], name: "index_trips_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email"
