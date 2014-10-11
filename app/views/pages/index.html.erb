@@ -3,6 +3,22 @@
   <div id="map-canvas"></div>
 </div>
 
-<div id="sidebar">
+<!-- <div id="sidebar">
   <h1>hello</h1>
+</div> -->
+
+<div id="locationData">
+<input type="button" value="get location" onclick="getUserLocation()"/>
+Location data here
 </div>
+
+<script>
+function getUserLocation() {
+
+//check if the geolocation object is supported, if so get position
+if (navigator.geolocation)
+	navigator.geolocation.getCurrentPosition(displayLocation, displayError);
+else
+	document.getElementById("locationData").innerHTML = "Sorry - your browser doesn't support geolocation!";
+}
+</script>
