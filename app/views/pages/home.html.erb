@@ -3,9 +3,7 @@
   </br>
     <h1>Welcome to Local Motion</h1>
     <h3>Find the best ride sharing option nearest you</h3>
-  <div id="sign_up_button">
-    <!-- <a href="#" class="button [secondary success alert]">Get Started</a> -->
-    <%= link_to "Get Started", "/auth/uber", {:class=>"button [secondary success alert]" } %>
+  <div id="get_started">
+    <%= link_to "Use My Location", new_trip_path, {:class=>"button [secondary success alert]" } %>
   </div>
-
 </div>
