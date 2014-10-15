@@ -6,22 +6,19 @@ class TripsController < ApplicationController
   end
 
   def create
-    binding.pry
-    start_address = params[:start_address]
-    end_address = params[:destination_address]
-    # starting_location = lat, long= Geocode address to get the lat and long
-    # starting_location = Location.create(lat: some_variable.lat, ...)
-    # ending_location = Location.create(lat: some_variable.lat, ...)
+    @starting_location = params[:starting_location]
+    @destination_location = params[:destination_address]
 
-
-    @trip = Trip.create()
+    @trip = Trip.create
     # @trip.trip_segments.create(starting_location: starting_location)
-    TripSegment.create(starting_location: starting_location, trip: @trip)
+    TripSegment.create(starting_location: starting_location,
+                       destination_location: destination_location,
+                       trip_id: @trip.id)
 
     if trip.save
-      redirect_to index, notice: "Trip created."
+      redirect_to index
     else
-      render :new, notice: "Trip not created."
+      render :new, notice: "Destination invalid."
     end
   end
 end
