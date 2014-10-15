@@ -30,24 +30,6 @@ RSpec.describe Location, :type => :model do
       end
     end
 
-    it 'is associated with a trip' do
-      VCR.use_cassette('get_two_locations_lats_longs') do
-        starting_location.save
-        destination_location.save
-        my_trip = Trip.create
-        my_trip_seg = TripSegment.create(starting_location_id: starting_location.id,
-                                         destination_location_id: destination_location.id,
-                                         trip_id: my_trip.id
-                                        )
-
-        expect(my_trip.trip_segments.count).to eq 1
-        expect(my_trip.trip_segments).to include(my_trip_seg)
-
-        # expect(my_trip_seg.starting_location.longitude).to eq -105.0001058
-        # expect(my_trip_seg.destination_location.latitude).to eq 39.764665
-        # expect(my_trip_seg.destination_location.longitude).to eq -105.018681
-      end
-    end
 
 
 
