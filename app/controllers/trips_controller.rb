@@ -5,16 +5,17 @@ class TripsController < ApplicationController
   end
 
   def create
-    @starting_location    = params[:starting_location]
-    @destination_location = params[:destination_address]
-    
-    binding.pry
-    @trip = Trip.create(starting_location_id: starting_location,
-                        destination_location_id: destination_location,
-                       )
+    start_location = Location.create(latitude:  params[:starting_location][:latitude],
+                                     longitude: params[:starting_location][:longitude])
 
-    if @trip.save
-      redirect_to index
+    dest_location  = Location.create( address:  params[:destination_location][:address])
+
+    trip = Trip.create(starting_location: start_location,
+                        destination_location: dest_location)
+                        # user: current_user)
+
+    if trip.save
+      redirect_to '/index'
     else
       render :new, notice: "Destination invalid."
     end
