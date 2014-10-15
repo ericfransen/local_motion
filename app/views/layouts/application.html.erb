@@ -14,13 +14,13 @@
 
   <body>
 
-      <%= render partial: 'layouts/navbar' %>
-      <% flash.each do |name, msg| %>
-        <%= content_tag(:div, msg, class: "alert alert-info") %>
-      <% end %>
+    <%= render partial: 'layouts/navbar' %>
+    <% flash.each do |name, msg| %>
+      <%= content_tag(:div, msg, class: "alert alert-info") %>
+    <% end %>
 
-      <%= yield %>
-      <%= javascript_include_tag "application" %>
+    <%= yield %>
+    <%= javascript_include_tag "application" %>
 
   </body>
 </html>

@@ -21,3 +21,7 @@
 # Ignore api response with server token
 /fixtures/vcr_cassettes/get_time_estimate.yml
 /fixtures/vcr_cassettes/get_price_estimate.yml
+
+# Test Coverage
+coverage/.last_run.json
+coverage/.resultset.json

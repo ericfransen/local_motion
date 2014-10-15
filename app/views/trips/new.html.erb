@@ -1,7 +1,7 @@
 
 
 <%= form_for @trip do |f| %>
-  <%= fields_for :starting_location, @trip_segment.starting_location do |start| %>
+  <%= fields_for :starting_location, @trip.starting_location do |start| %>
     <%= start.hidden_field :latitude %>
     <%= start.hidden_field :longitude %>
     <!-- <%= start.label :address %>: -->
@@ -11,7 +11,7 @@
     <div class="large-12 columns">
       <div class="row collapse">
         <div class="small-10 columns">
-          <%= fields_for :destination_location, @trip_segment.destination_location do |destination| %>
+          <%= fields_for :destination_location, @trip.destination_location do |destination| %>
             <!-- <%= destination.hidden_field :latitude %>
             <%= destination.hidden_field :longitude %> -->
             <!-- <%= destination.label :address %>: -->

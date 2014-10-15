@@ -20,13 +20,14 @@ RSpec.describe Location, :type => :model do
       VCR.use_cassette('get_two_locations_lats_longs') do
         starting_location.save
         destination_location.save
-        my_trip_seg = TripSegment.new(starting_location_id: starting_location.id,
-                                      destination_location_id: destination_location.id
-                                     )
-        expect(my_trip_seg.starting_location.latitude).to eq 39.7496354
-        expect(my_trip_seg.starting_location.longitude).to eq -105.0001058
-        expect(my_trip_seg.destination_location.latitude).to eq 39.764665
-        expect(my_trip_seg.destination_location.longitude).to eq -105.018681
+        my_trip = Trip.new(starting_location_id: starting_location.id,
+                           destination_location_id: destination_location.id
+                          )
+
+        expect(my_trip.starting_location.latitude).to eq 39.7496354
+        expect(my_trip.starting_location.longitude).to eq -105.0001058
+        expect(my_trip.destination_location.latitude).to eq 39.764665
+        expect(my_trip.destination_location.longitude).to eq -105.018681
       end
     end
 
