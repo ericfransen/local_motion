@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get "/auth/:provider/callback", to: "sessions#create"
   get "/auth/failure", to: "sessions#omniauth_failure"
+
   get "/signout" => "sessions#destroy", :as => :signout
 
   resources :trips
