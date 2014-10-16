@@ -31,6 +31,14 @@ RSpec.describe Location, :type => :model do
       end
     end
 
+    xit 'is invalid if it isn\'t referenced by a trip' do
+      trip = Trip.create(destination_location: nil)
+      expect(trip).to_not be_valid
+    end
+
+    xit 'is valid' do
+      expect(address).to be_valid
+    end
 
 
 

@@ -4,6 +4,8 @@ class Location < ActiveRecord::Base
   geocoded_by :address
   after_validation :geocode
 
+  # validates :latitude, :longitude, presence: true
+  
   def self.update_lat_longs
     self.where(latitude: nil).each(&:save)
   end

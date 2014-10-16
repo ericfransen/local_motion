@@ -3,7 +3,7 @@ class Uber
   def get_time_estimate(start_lat, start_lon)
     times = Rest.get(url: time_estimate_url, options: time_estimate_options(start_lat, start_lon))
     uber_x_time = times['times'].select{|service| service['display_name'] == "uberX"}[0]
-    uber_x_time['estimate']
+    (uber_x_time['estimate'] / 60)
   end
 
   def get_price_estimate(start_lat, start_lon, end_lat, end_lon)
@@ -13,6 +13,8 @@ class Uber
                         :uber_hi_price    => uber_x_price['high_estimate'],
                         :surge_multiplier => uber_x_price['surge_multiplier']
                       }
+    return "#{uber_price_hash[:uber_low_price]} to $#{uber_price_hash[:uber_hi_price]}"
+
   end
 
 private

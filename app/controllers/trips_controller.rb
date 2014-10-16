@@ -15,7 +15,6 @@ class TripsController < ApplicationController
     trip = Trip.create(starting_location:    start_location,
                        destination_location: dest_location,
                        user:                 current_user)
-
     if trip.save
       redirect_to '/index'
     else
