@@ -1,12 +1,16 @@
+<div class="background_img"></div>
 
 <div class="welcome">
-  <div id="sign_up_button">
-    <!-- <%= link_to "Get Started", "/auth/uber", {:class=>"button [secondary success alert]" } %> -->
-    <%= link_to "Get Started", "/auth/uber", {:class=>"button [secondary success alert]" } %>
-
+  </br>
+  <% if current_user %>
+    <div id="get_started">
+      <%= link_to "Use My Location", new_trip_path, {:class=>"button [secondary success alert]" } %>
+  <% else %>
+    <h1>Welcome to Local Motion</h1>
+    <h3>Find the best ride sharing option nearest you</h3>
+    <%= link_to "Log in with UBER", '/auth/uber', {:class=>"button [secondary success alert]" } %>
+  <% end %>
   </div>
-
 </div>
 
-
-<h5>This product uses the car2go API but is not endorsed or certified by car2go.</h3>
+<!-- <div class="custom-panel">Custom panel content goes here</div> -->

@@ -9,18 +9,18 @@
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaK_7Mwsr60nrhZx1d-aEkIkGvUo4d6m8"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true?key=AIzaSyBaK_7Mwsr60nrhZx1d-aEkIkGvUo4d6m8"></script>
   </head>
 
   <body>
 
-      <%= render partial: 'layouts/navbar' %>
-      <% flash.each do |name, msg| %>
-        <%= content_tag(:div, msg, class: "alert alert-info") %>
-      <% end %>
+    <%= render partial: 'layouts/navbar' %>
+    <% flash.each do |name, msg| %>
+      <%= content_tag(:div, msg, class: "alert alert-info") %>
+    <% end %>
 
-      <%= yield %>
-      <%= javascript_include_tag "application" %>
+    <%= yield %>
+    <%= javascript_include_tag "application" %>
 
   </body>
 </html>

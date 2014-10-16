@@ -21,17 +21,21 @@
 html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
 
 .welcome {
-   background: url(http://static.pexels.com/wp-content/uploads/2014/06/city-crossing-man-447.jpg) center center fixed;
-   background-repeat: no-repeat;
-   background-size: cover;
-    width: 100%;
-    height: 100%;
+  // background-image: image-url('local_motion_background.jpg') center center fixed;
+  background: url(http://static.pexels.com/wp-content/uploads/2014/06/city-crossing-man-447.jpg) center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  // background: black;
+  color: white;
 }
 
-#sign_up_button {
-  margin-left: auto;
-  margin-right: auto;
-  float: right;
+#get_started {
+  // margin-left: auto;
+  // margin-right: auto;
+  // align: center;
   /*margin: auto;*/
   // width: 10%;
 }
@@ -51,6 +55,10 @@ html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
   top: 45px;
   bottom: 0px;
   width: 500px;
-  background: red;
+  background: #073763;
   // overflow-y: auto;
+}
+
+#locationData {
+  float: right;
 }

@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  # get 'pages/home'
 
   root 'pages#home'
 
@@ -12,6 +11,8 @@ Rails.application.routes.draw do
   get "/auth/failure", to: "sessions#omniauth_failure"
 
   get "/signout" => "sessions#destroy", :as => :signout
+
+  resources :trips
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

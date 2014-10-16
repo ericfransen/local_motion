@@ -17,18 +17,14 @@ gem 'foundation-rails'
 gem 'omniauth'
 gem 'omniauth-uber'
 gem 'figaro'
-gem 'binding_of_caller'
-gem 'skylight', '~> 0.3.20'
 gem 'coveralls', require: false
 gem 'httparty'
 gem 'geocoder'
 
 # gem 'thin'
-# gem 'bcrypt', '~> 3.1.7'
 # gem 'paperclip', "~> 4.1"
 # gem 'aasm'
 # gem 'active_model_serializers'
-# gem 'geocoder'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -36,7 +32,7 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'pry'
-  # gem 'binding_of_caller'
+  gem 'binding_of_caller'
   # gem 'guard-rspec'
   # gem 'seed_dump'
 end
@@ -48,20 +44,16 @@ end
 
 group :development do
   gem 'better_errors'
+  # gem 'debugger'
 end
 
 group :production do
   gem 'pg'
+  gem 'skylight', '~> 0.3.20'
 end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]

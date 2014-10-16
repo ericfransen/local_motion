@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141008190605) do
+ActiveRecord::Schema.define(version: 20141015200400) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,29 @@ ActiveRecord::Schema.define(version: 20141008190605) do
     t.float    "longitude"
   end
 
+<<<<<<< HEAD
+  create_table "locations", force: true do |t|
+    t.integer  "trip_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "address"
+    t.float    "latitude"
+    t.float    "longitude"
+  end
+
+  add_index "locations", ["trip_id"], name: "index_locations_on_trip_id", using: :btree
+
+  create_table "trips", force: true do |t|
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "starting_location_id"
+    t.integer  "destination_location_id"
+  end
+
+  add_index "trips", ["user_id"], name: "index_trips_on_user_id", using: :btree
+
+=======
   create_table "trips", force: true do |t|
     t.string   "starting_street"
     t.string   "starting_city"
@@ -42,6 +65,7 @@ ActiveRecord::Schema.define(version: 20141008190605) do
     t.datetime "updated_at"
   end
 
+>>>>>>> master
   create_table "users", force: true do |t|
     t.string   "email"
     t.string   "encrypted_password",     default: "", null: false

@@ -1,12 +1,12 @@
 class BCycleStation < ActiveRecord::Base
 
   geocoded_by :full_street_address
-  after_validation :geocode
+  after_validation :geocode, :if => lambda{ |obj| obj.address_changed? }
 
-  def self.update_lat_longs
-    self.where(latitude: nil).each(&:save)
+  def address_changed?
+    address_parts = ['address_line1', 'city', 'state', 'zip']
+    address_parts.any?{|a| send "#{a}_changed?"}
   end
-
 
   private
 
