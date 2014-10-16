@@ -11,7 +11,6 @@
     <% if current_user %>
       <ul class="right">
         <!-- <li class="active"><a href="#">sign out</a></li> -->
-
         <li class="has-dropdown">
           <a href="#">Welcome <%= current_user.first_name %></a>
           <ul class="dropdown">
@@ -21,16 +20,10 @@
           </ul>
         </li>
       </ul>
-
-    <% else %>
-      <ul class="right">
-        <li class="active"><a href="/auth/uber">sign in with UBER</a></li>
-      </ul>
     <% end %>
 
-    <!-- Left Nav Section -->
     <ul class="left">
-      <li><a href="/about">about</a></li>
+      <li><a href="/about">how it works</a></li>
     </ul>
   </section>
 </nav>

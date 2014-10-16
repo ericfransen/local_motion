@@ -1,9 +1,17 @@
+<div class="background_img"></div>
 
 <div class="welcome">
   </br>
+  <% if current_user %>
+    <div id="get_started">
+      <%= link_to "Use My Location", new_trip_path, {:class=>"button [secondary success alert]" } %>
+  <% else %>
     <h1>Welcome to Local Motion</h1>
     <h3>Find the best ride sharing option nearest you</h3>
-  <div id="get_started">
-    <%= link_to "Use My Location", new_trip_path, {:class=>"button [secondary success alert]" } %>
+    <%= link_to "Log in with UBER", '/auth/uber', {:class=>"button [secondary success alert]" } %>
+  <% end %>
+
   </div>
 </div>
+
+<!-- <div class="custom-panel">Custom panel content goes here</div> -->
