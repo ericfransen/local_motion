@@ -41,16 +41,16 @@ Google Maps
 ### Technical Expectations
 
 * must use an external OAuth provider to authenticate users
-* must expose a JSON API that allows a user to both read and write data
+<del>* must expose a JSON API that allows a user to both read and write data<del>
 * must filter data appropriately in both the web and API based on authorization rules
-* must create a Ruby gem which allows a user to easily interact with your API
+<del>* must create a Ruby gem which allows a user to easily interact with your API<del>
 * must make use of a Virtual Private Server to host your application
-* must automate the deployment of your application to a single command
-* application must accept uploads of some user images
-* application must manipulate those images to suit the layout/style of the app itself
+<del>* must automate the deployment of your application to a single command<del>
+<del>* application must accept uploads of some user images<del>
+<del>* application must manipulate those images to suit the layout/style of the app itself<del>
 * use of background workers for all appropriate tasks
-* send notifications to users over email
-* receive some form of content from users via email
+* send notifications to users over email/SMS/Twitter
+<del>* receive some form of content from users via email<del>
 
 # Iteration Plan:
 
