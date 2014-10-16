@@ -15,7 +15,6 @@ RSpec.describe "User creating trip", type: :feature do
         click_link "Use My Location"
         fill_in 'enter your destination', :with => '1510 Blake St Denver CO'
         click_button "Go"
-        save_and_open_page
         expect(page).to have_content('Options')
       end
     end
