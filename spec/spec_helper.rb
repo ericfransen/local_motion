@@ -48,7 +48,8 @@ RSpec.configure do |config|
           :info => {
             :first_name => "Bob",
             :last_name => "Roberts",
-            :email => "bob@roberts.com"
+            :email => "bob@roberts.com",
+            :picture_url => "https://d297l2q4lq2ras.cloudfront.net/nomad/2014/10/9/21/480x480_id_95dd3b12-ccbb-41e9-838e-ed94b77bb7a4.jpeg"
           }
         })
     end
