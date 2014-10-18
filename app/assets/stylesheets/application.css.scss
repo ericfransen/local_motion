@@ -18,19 +18,9 @@
 
  */
 
-html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+@import "home";
 
-.welcome {
-  background-image: image-url('local_motion_background.jpg');
-  // background-image: image-url('local_motion_background.jpg') center center fixed;
-  // background: url(http://static.pexels.com/wp-content/uploads/2014/06/city-crossing-man-447.jpg) center center fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  // background: black;
-}
+html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
 
 .blur_background {
   background-image: image-url('local_motion_background_blur.jpg');

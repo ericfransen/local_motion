@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     session[:user_id] = user.id
     user.save
     if user.save
-      redirect_to root_url, notice: "You successfully signed in."
+      redirect_to new_trip_path, notice: "You successfully signed in."
     else
       omniauth_failure
     end

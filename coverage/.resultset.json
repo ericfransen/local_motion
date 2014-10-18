@@ -777,6 +777,42 @@
         null,
         null
       ],
+      "/Users/ericfransen/Dropbox/turing/projects/local_motion/app/controllers/trips_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/ericfransen/Dropbox/turing/projects/local_motion/lib/rest.rb": [
         1,
         1,
@@ -785,6 +821,6 @@
         null
       ]
     },
-    "timestamp": 1413612635
+    "timestamp": 1413625594
   }
 }

@@ -1,29 +1,31 @@
-<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="/home">LOCAL MOTION</a></h1>
-    </li>
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-    <% if current_user %>
-      <ul class="right">
-        <!-- <li class="active"><a href="#">sign out</a></li> -->
-        <li class="has-dropdown">
-          <a href="#">Welcome <%= current_user.first_name %></a>
-          <ul class="dropdown">
-            <li><%= link_to "account", account_path(current_user) %></li>
-            <!-- <li><a href="/account">account</a></li> -->
-            <li class="active"><a href="/signout">sign out</a></li>
-          </ul>
-        </li>
-      </ul>
-    <% end %>
-
-    <ul class="left">
-      <li><a href="/about">how it works</a></li>
+<div class="sticky">  
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/home">LOCAL MOTION</a></h1>
+      </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
-  </section>
-</nav>
+
+    <section class="top-bar-section">
+      <% if current_user %>
+        <ul class="right">
+          <!-- <li class="active"><a href="#">sign out</a></li> -->
+          <li class="has-dropdown">
+            <a href="#">Welcome <%= current_user.first_name %></a>
+            <ul class="dropdown">
+              <li><%= link_to "account", account_path(current_user) %></li>
+              <!-- <li><a href="/account">account</a></li> -->
+              <li class="active"><a href="/signout">sign out</a></li>
+            </ul>
+          </li>
+        </ul>
+      <% end %>
+
+      <ul class="left">
+        <li><a href="/about">how it works</a></li>
+      </ul>
+    </section>
+  </nav>
+</div>
