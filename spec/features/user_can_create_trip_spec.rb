@@ -7,7 +7,7 @@ RSpec.describe "User creating trip", type: :feature do
 
   describe "A user" do
 
-    it "can log in and can create trip" do
+    xit "can log in and can create trip" do
       VCR.use_cassette('create_trip_get_lat_longs') do
         visit root_path
         mock_auth_hash

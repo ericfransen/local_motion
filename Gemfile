@@ -20,6 +20,7 @@ gem 'figaro'
 gem 'coveralls', require: false
 gem 'httparty'
 gem 'geocoder'
+gem 'gmaps4rails'
 
 # gem 'thin'
 # gem 'paperclip', "~> 4.1"
