@@ -4,8 +4,52 @@
 </div>
 
 <div id="sidebar">
-  <h1>Options</h1>
-  <h3>UBER Time Est: <%= @uber_time %> MIN</h3>
-  <h3>UBER Price Est: $<%= @uber_price %></h3>
+  <div id="profile">
+    <img src='<%= current_user.picture_url %>' alt="UBER Profile Pic" class="uber_profile_pic">
+    <h5><%= @current_user.first_name %></h5>
+    <input class="dest_input" placeholder="<%= @dest_add %>" autofocus>
+  </div>
 
+  <div id="bcycle">
+    <div class="element">
+      <img src="/assets/b_cycle_logo.jpg" alt="B-Cycle Logo" class="b_cycle_logo">
+    </div>
+    <!-- <div id="bcycle_price">
+      <h1>$</h1>
+      <h3><%= "8" %></h3>
+    </div>
+    <div id="time">
+      <h1><i class="foundicon-[clock]"></i></h1>
+      <h3><%= "X" %> MIN</h3>
+      <hr noshade size=1>
+      <h5><%= "X" %> MIN walk</h5>
+      <h5><%= "X" %> MIN ride</h5>
+    </div> -->
+
+  </div>
+
+  <div id="car2go">
+    <div class="element">
+    <img src="/assets/car2go_logo.png" alt="Car2Go Logo" class="car2go_logo">
+    <!-- <h5>Car2Go</h5> -->
+    </div>
+  </div>
+
+  <div id="uber">
+    <div class="element">
+      <img src="/assets/uber_logo.png" alt="UBER Logo" class="uber_logo">
+    </div>
+    <!-- <div id="uber_price">
+      <h1>$</h1>
+      <h3><%= "0" %></h3>
+      @uber_price
+    </div>
+    <div id="uber_time">
+      <h1><i class="foundicon-[clock]"></i></h1>
+      <h3><%= "X" %> MIN</h3>
+      <h5><%= "0" %> MIN wait</h5>
+      @uber_time
+      <h5><%= "X" %> MIN ride</h5>
+    </div> -->
+  </div>
 </div>

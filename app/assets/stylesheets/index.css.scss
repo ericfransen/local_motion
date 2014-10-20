@@ -1,0 +1,121 @@
+html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+
+.show_map {
+  position: fixed;
+  top: 45px;
+  bottom: 0px;
+  width: 66%;
+  left: 0px;
+}
+
+#sidebar {
+  position: fixed;
+  top: 45px;
+  bottom: 0px;
+  left: 66%;
+  width: 34%;
+  // overflow-y: auto;
+  background: #073763;
+
+}
+
+#profile {
+  height: 40.0%;
+  // background: #74c994;
+  // color: #073763;
+  background: #073763;
+  padding: 20px;
+  h5 { color: #9fc5e8;}
+  text-align: center;
+}
+
+.dest_input {
+  color: white;
+  font-size:1em;
+  text-align: center;
+  position: relative;
+  height: 20px;
+  margin-top:90px;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  padding: 20px;
+}
+
+#bcycle {
+  height: 20.0%;
+  background: white;
+  vertical-align: middle;
+}
+
+#car2go {
+  height: 20.0%;
+  background: #009be0;
+  overflow: auto;
+}
+
+#uber {
+  height:20.0%;
+  background: black;
+  h5 { color: white; font-family: 'Syncopate', sans-serif;}
+}
+
+.uber_profile_pic {
+  height: 75px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+.b_cycle_logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  // background-image: image-url("b_cycle_logo.jpg");
+  background-size: cover;
+  margin-left: 1em;
+  // margin-top: center;
+  // margin-bottom: 30px;
+}
+
+.car2go_logo {
+  // width: 60px;
+  height: 60px;
+  margin-left: 1em;
+  // border-radius: 50%;
+  // background-image: image-url("car2go_logo.jpg");
+  background-size: cover;
+}
+
+.uber_logo {
+  width: 60px;
+  margin-left: 1em;
+  vertical-align: center;
+}
+
+#bcycle_price {
+  position: absolute;
+  margin-left: 2em;
+  text-align: center;
+  h1, h3 { color: #c41231; font-family: 'Syncopate', sans-serif;}
+}
+
+#uber_price {
+  position: relative;
+  float: left;
+  margin-left: 2em;
+  text-align: center;
+  h1, h3 { color: #c0c0c8; font-family: 'Syncopate', sans-serif;}
+}
+
+.element {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// #locationData {
+//   float: right;
+// }

@@ -19,8 +19,7 @@
  */
 
 @import "home";
-
-html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+@import "index";
 
 .blur_background {
   background-image: image-url('local_motion_background_blur.jpg');
@@ -30,36 +29,4 @@ html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
   width: 100%;
   height: 100%;
   text-align: center;
-  // background: black;
-}
-
-#get_started {
-  // margin-left: auto;
-  // margin-right: auto;
-  // align: center;
-  /*margin: auto;*/
-  // width: 10%;
-}
-
-.show_map {
-  position: fixed;
-  top: 45px;
-  bottom: 0px;
-  right: 500px;
-  left: 0px;
-}
-
-#sidebar {
-  // position: fixed;
-  float: right;
-  padding: 0 20px 0 20px;
-  top: 45px;
-  bottom: 0px;
-  width: 500px;
-  background: #073763;
-  // overflow-y: auto;
-}
-
-#locationData {
-  float: right;
 }

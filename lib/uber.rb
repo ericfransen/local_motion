@@ -15,7 +15,7 @@ class Uber
                         :uber_trip_time   => uber_x_price['duration'],
                         :uber_distance    => uber_x_price['distance']
                       }
-    return "#{uber_price_hash[:uber_low_price]} - $#{uber_price_hash[:uber_hi_price]}"
+    return "#{uber_price_hash[:uber_low_price]} - #{uber_price_hash[:uber_hi_price]}"
   end
 
 private

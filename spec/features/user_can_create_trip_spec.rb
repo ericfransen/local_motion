@@ -47,6 +47,7 @@ RSpec.describe "User creating trip", type: :feature do
       click_link "Log in with UBER"
       fill_in 'enter your destination', :with => '1510 Blake St Denver CO'
       click_button "Go"
+
       expect(current_user.picture_url).to eq 'https://d297l2q4lq2ras.cloudfront.net/nomad/2014/10/9/21/480x480_id_95dd3b12-ccbb-41e9-838e-ed94b77bb7a4.jpeg'
     end
   end

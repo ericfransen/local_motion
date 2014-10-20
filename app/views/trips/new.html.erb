@@ -1,4 +1,5 @@
-<div class='blur_background'>
+<div id="bg"></div>
+
 
 <%= form_for @trip do |f| %>
   <%= fields_for :starting_location, @trip.starting_location do |start| %>
@@ -25,4 +26,3 @@
       </div>
     </div>
   </div>
-</div>
