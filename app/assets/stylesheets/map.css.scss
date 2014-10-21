@@ -1,0 +1,18 @@
+html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+
+.show_map {
+  position: fixed;
+  top: 45px;
+  bottom: 0px;
+  width: 66%;
+  left: 0px;
+}
+
+/* Bootstrap Css Map Fix*/
+.show_map #map-canvas img {
+  max-width: none;
+}
+/* Bootstrap Css Map Fix*/
+.show_map #map-canvas label {
+  width: auto; display:inline;
+}
