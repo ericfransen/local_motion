@@ -4,10 +4,17 @@
   bottom: 0px;
   left: 66%;
   width: 34%;
-  // overflow-y: auto;
   background: #073763;
-
 }
+
+// @media (max-width: 766px) {
+//   #sidebar {
+//     position:relative;
+//     float: none;
+//     min-width: 380px;
+//   }
+// }
+
 
 #profile {
   height: 40.0%;
@@ -20,7 +27,7 @@
 }
 
 .dest_input {
-  color: white;
+  color: #9fc5e8;
   font-size:1em;
   text-align: center;
   position: relative;
@@ -35,7 +42,7 @@
 #bcycle {
   height: 20.0%;
   background: white;
-  vertical-align: middle;
+  // vertical-align: middle;
 }
 
 #car2go {
@@ -45,43 +52,59 @@
 }
 
 #uber {
+  display: flex;
+  align-items: center;
   height:20.0%;
   background: black;
-  h5 { color: white; font-family: 'Syncopate', sans-serif;}
+  li { color: #c0c0c8; font-family: 'Syncopate', sans-serif; list-style-type: none;}
 }
 
-.uber_profile_pic {
+.same {
+  color: #c0c0c8;
+  font-family: 'Syncopate', sans-serif; list-style-type: none;
+}
+
+.profile_pic {
   height: 75px;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
 }
 
-.b_cycle_logo {
+.service-logo img {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  // background-image: image-url("b_cycle_logo.jpg");
-  background-size: cover;
-  margin-left: 1em;
-  // margin-top: center;
-  // margin-bottom: 30px;
 }
 
-.car2go_logo {
-  // width: 60px;
-  height: 60px;
-  margin-left: 1em;
-  // border-radius: 50%;
-  // background-image: image-url("car2go_logo.jpg");
-  background-size: cover;
+.service_info {
+  display: flex;
 }
 
-.uber_logo {
-  width: 60px;
-  margin-left: 1em;
-  // vertical-align: center;
-}
+// .b_cycle_logo {
+//   width: 60px;
+//   height: 60px;
+//   border-radius: 50%;
+//   // background-image: image-url("b_cycle_logo.jpg");
+//   background-size: cover;
+//   margin-left: 1em;
+//   // margin-top: center;
+//   // margin-bottom: 30px;
+// }
+
+// .car2go_logo {
+//   // width: 60px;
+//   height: 60px;
+//   margin-left: 1em;
+//   // border-radius: 50%;
+//   // background-image: image-url("car2go_logo.jpg");
+//   background-size: cover;
+// }
+
+// .uber_logo {
+//   width: 60px;
+//   margin-left: 1em;
+//   // vertical-align: center;
+// }
 
 #bcycle_price {
   position: absolute;
@@ -91,23 +114,38 @@
 }
 
 #uber_price {
-  display: inline-block;
-  vertical-align: top;
+  // display: inline-block;
+  // float: left;
+  // vertical-align: top;
   // position: relative;
   // float: left;
   // margin-left: 2em;
+  flex: 1;
   text-align: center;
-  h1, h3 { color: #c0c0c8; font-family: 'Syncopate', sans-serif;}
+  h2, h3 { color: #c0c0c8; font-family: 'Syncopate', sans-serif;}
 }
 
-.element {
+.service-logo {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  display: flex;
 }
 
-// #locationData {
-//   float: right;
+.service-logo img {
+  width: 60px;
+  height: 60px;
+  margin-left: 1rem;
+}
+
+.service-time {
+  color: #fff;
+  display: flex;
+}
+
+//
+// #uber .service-time {
+//   color: red;
 // }

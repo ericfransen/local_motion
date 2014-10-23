@@ -24,11 +24,11 @@ class TripsController < ApplicationController
 
 private
 
-   def require_login
-     unless current_user
-       flash[:error] = "You must log in with UBER to build a trip"
-       redirect_to root_path
-     end
-   end
+  def require_login
+    unless current_user
+      flash[:error] = "You must log in with UBER to build a trip"
+      redirect_to root_path
+    end
+  end
 
 end

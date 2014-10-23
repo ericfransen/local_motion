@@ -5,13 +5,13 @@
 
 <div id="sidebar">
   <div id="profile">
-    <img src='<%= current_user.picture_url %>' alt="UBER Profile Pic" class="uber_profile_pic">
+    <img src='<%= current_user.picture_url %>' alt="UBER Profile Pic" class="profile_pic">
     <h5><%= @current_user.first_name %></h5>
     <input class="dest_input" placeholder="<%= @dest_add %>" autofocus>
   </div>
 
   <div id="bcycle">
-    <div class="element">
+    <div class="service-logo">
       <img src="/assets/b_cycle_logo.jpg" alt="B-Cycle Logo" class="b_cycle_logo">
     </div>
     <!-- <div id="bcycle_price">
@@ -29,27 +29,31 @@
   </div>
 
   <div id="car2go">
-    <div class="element">
-    <img src="/assets/car2go_logo.png" alt="Car2Go Logo" class="car2go_logo">
+    <div class="service-logo">
+      <img src="/assets/car2go_logo.png" alt="Car2Go Logo" class="car2go_logo">
     <!-- <h5>Car2Go</h5> -->
     </div>
   </div>
 
-  <div id="uber">
-    <div class="element">
+  <div id="uber" class="row">
+    <div class="service-logo">
       <img src="/assets/uber_logo.png" alt="UBER Logo" class="uber_logo">
     </div>
-    <div id="uber_price">
-      <h1>$</h1>
+    <div id="uber_price" class="service-price">
+      <h2>$</h2>
       <h3><%= "0" %></h3>
-      @uber_price
     </div>
-    <!-- <div id="uber_time">
+    <div id="uber_time" class="service-time">
       <h1><i class="foundicon-[clock]"></i></h1>
-      <h3><%= "X" %> MIN</h3>
-      <h5><%= "0" %> MIN wait</h5>
-      @uber_time
-      <h5><%= "X" %> MIN ride</h5>
-    </div> -->
+      <ul>
+        <h2 class="same"><%= "X" %> MIN</h2>
+        <li><%= "0" %> MIN wait</li>
+        <li><%= "X" %> MIN ride</li>
+      </ul>
+    </div>
+    <div class="service-actions">
+      <div class="button [tiny small large]">
+        GO
+      </div>    </div>
   </div>
 </div>
