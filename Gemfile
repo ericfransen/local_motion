@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'spring',        group: :development
+gem 'pg'
 gem 'unicorn'
 gem 'foundation-rails'
 gem 'omniauth'
@@ -22,6 +23,7 @@ gem 'httparty'
 gem 'geocoder'
 gem 'gmaps4rails'
 
+
 # gem 'thin'
 # gem 'paperclip', "~> 4.1"
 # gem 'aasm'
@@ -29,7 +31,6 @@ gem 'gmaps4rails'
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'sqlite3'
   gem 'capybara'
   gem 'launchy'
   gem 'pry'
