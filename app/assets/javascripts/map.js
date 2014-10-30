@@ -32,8 +32,10 @@
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map,
         identifier: locations[i][3],
-        content: '<p><strong>'+locations[i][0]+'</strong></p><p>' +
-                 '<a href="https://www.google.com/maps/dir/'+userLat+','+userLon+'/'+locations[i][0]+'" target="_blank">Get Directions</a></p>'
+        content: '<p><strong>'+locations[i][0]+'</strong></p><p>'+
+                 'interior: '+locations[i][4]+'  |  exterior: ' +locations[i][5]+'</p><p>'+
+                 '<a href="https://www.google.com/maps/dir/'+userLat+','+userLon+'/'+locations[i][0]+
+                 '" target="_blank" class="button [tiny small large]">Get Directions</a></p>'
       });
 
       bounds.extend(marker.position);

@@ -58,9 +58,14 @@
   </div>
 </div>
 <script type="text/javascript">
-var locations = [
-<% @car2go.each do |car| %>
-  ["<%= car["address"] %>", <%= car["coordinates"][1] %>, <%= car["coordinates"][0] %>, "<%= car["name"] %>"],
-<% end %>
-];
+  var locations = [
+  <% @car2go.each do |car| %>
+    ["<%= car["address"] %>",
+      <%= car["coordinates"][1] %>,
+      <%= car["coordinates"][0] %>,
+     "<%= car["name"] %>",
+     "<%= car["interior"] %>",
+     "<%= car["exterior"] %>"],
+  <% end %>
+  ];
 </script>
