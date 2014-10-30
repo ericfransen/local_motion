@@ -1,5 +1,5 @@
 (function($) {
-  var userLat, userLon;
+  var userLat, userLon, zoom_amt;
   $(document).ready(function () {
 
     google.maps.event.addDomListener(window, 'load', initialize);
@@ -11,11 +11,14 @@
     // } else {
     //   window.location('/trip/new');
     // }
+    if (typeof userLat  == 'undefined') { userLat  = 39.7392; }
+    if (typeof userLon  == 'undefined') { userLon  = -104.9847; }
+    if (typeof zoom_amt == 'undefined') { zoom_amt = 12 }
+    // console.log( userLat, userLon, zoom_amt );
 
     var mapOptions = {
-      center: { lat: userLat, lng: userLon},
-        // center: { lat: 39.7496354, lng: -105.0001058},
-      zoom: 16
+      center: { lat: userLat, lng: userLon },
+      zoom: zoom_amt
     };
 
     var map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -50,8 +53,9 @@
       $('#starting_location_latitude').val(position.coords.latitude);
       $('#starting_location_longitude').val(position.coords.longitude);
       $('#starting_location_address').hide().after('<p>Using your current location</p>');
-      userLat = position.coords.latitude;
-      userLon = position.coords.longitude;
+      userLat  = position.coords.latitude;
+      userLon  = position.coords.longitude;
+      zoom_amt = 16;
       initialize();
     }, function(error) {
       //alert( JSON.stringify(error) );
