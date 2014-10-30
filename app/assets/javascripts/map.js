@@ -12,6 +12,7 @@
     //   window.location('/trip/new');
     // }
 
+
     var mapOptions = {
       center: { lat: userLat, lng: userLon},
         // center: { lat: 39.7496354, lng: -105.0001058},
@@ -21,16 +22,22 @@
     var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
     var allMarkers = [],
+        bounds = new google.maps.LatLngBounds(),
         infowindow = new google.maps.InfoWindow(),
         marker;
     for (i = 0; i < locations.length; i++) {
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map,
+        identifier: locations[i][3],
+        content: '<p><strong>'+locations[i][0]+'</strong></p><p>' +
+                 '<a href="https://www.google.com/maps/dir/>Get Directions</a></p>'
       });
 
+      bounds.extend(marker.position);
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
+          infowindow.setContent(marker.content);
           infowindow.open(map, marker);
         }
       })(marker, i));
