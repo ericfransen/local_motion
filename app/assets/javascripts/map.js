@@ -12,7 +12,6 @@
     //   window.location('/trip/new');
     // }
 
-
     var mapOptions = {
       center: { lat: userLat, lng: userLon},
         // center: { lat: 39.7496354, lng: -105.0001058},
@@ -31,7 +30,7 @@
         map: map,
         identifier: locations[i][3],
         content: '<p><strong>'+locations[i][0]+'</strong></p><p>' +
-                 '<a href="https://www.google.com/maps/dir/>Get Directions</a></p>'
+                 '<a href="https://www.google.com/maps/dir/'+userLat+','+userLon+'/'+locations[i][0]+'" target="_blank">Get Directions</a></p>'
       });
 
       bounds.extend(marker.position);
