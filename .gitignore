@@ -19,6 +19,7 @@
 /config/application.yml
 
 # Ignore api response with server token
+/fixtures/vcr_cassettes/*.yml
 /fixtures/vcr_cassettes/get_time_estimate.yml
 /fixtures/vcr_cassettes/get_price_estimate.yml
 

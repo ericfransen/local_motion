@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141015200400) do
+ActiveRecord::Schema.define(version: 20141018102004) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 20141015200400) do
     t.float    "longitude"
   end
 
-<<<<<<< HEAD
   create_table "locations", force: true do |t|
     t.integer  "trip_id"
     t.datetime "created_at"
@@ -51,21 +50,6 @@ ActiveRecord::Schema.define(version: 20141015200400) do
 
   add_index "trips", ["user_id"], name: "index_trips_on_user_id", using: :btree
 
-=======
-  create_table "trips", force: true do |t|
-    t.string   "starting_street"
-    t.string   "starting_city"
-    t.string   "starting_state"
-    t.string   "starting_zip"
-    t.string   "destination_street"
-    t.string   "destination_city"
-    t.string   "destination_state"
-    t.string   "destination_zip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
->>>>>>> master
   create_table "users", force: true do |t|
     t.string   "email"
     t.string   "encrypted_password",     default: "", null: false
@@ -83,6 +67,7 @@ ActiveRecord::Schema.define(version: 20141015200400) do
     t.datetime "updated_at"
     t.string   "provider"
     t.string   "uid"
+    t.string   "picture_url"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

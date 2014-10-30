@@ -15,7 +15,6 @@ class TripsController < ApplicationController
     trip = Trip.create(starting_location:    start_location,
                        destination_location: dest_location,
                        user:                 current_user)
-
     if trip.save
       redirect_to '/index'
     else
@@ -25,11 +24,11 @@ class TripsController < ApplicationController
 
 private
 
-   def require_login
-     unless current_user
-       flash[:error] = "You must log in with UBER to build a trip"
-       redirect_to root_path
-     end
-   end
+  def require_login
+    unless current_user
+      flash[:error] = "You must log in with UBER to build a trip"
+      redirect_to root_path
+    end
+  end
 
 end

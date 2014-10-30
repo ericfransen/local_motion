@@ -21,9 +21,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 16 Oct 2014 02:53:18 GMT
+      - Thu, 16 Oct 2014 09:15:17 GMT
       Expires:
-      - Fri, 17 Oct 2014 02:53:18 GMT
+      - Fri, 17 Oct 2014 09:15:17 GMT
       Cache-Control:
       - public, max-age=86400
       Access-Control-Allow-Origin:
@@ -110,5 +110,35 @@ http_interactions:
            "status" : "OK"
         }
     http_version: 
-  recorded_at: Thu, 16 Oct 2014 02:53:18 GMT
+  recorded_at: Thu, 16 Oct 2014 09:15:18 GMT
+- request:
+    method: get
+    uri: https://api.uber.com/v1/estimates/time?server_token=W8mj7gOB352uCkBNL6GvvK4YyC-RoUc__M10whtP&start_latitude=&start_longitude=-105.0001058
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Oct 2014 09:15:18 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '132'
+      Connection:
+      - keep-alive
+      X-Uber-App:
+      - uberex-nonsandbox
+    body:
+      encoding: UTF-8
+      string: '{"fields":{"start_latitude":"Latitude must be a float for dictionary
+        value"},"message":"Invalid request","code":"validation_failed"}'
+    http_version: 
+  recorded_at: Thu, 16 Oct 2014 09:15:19 GMT
 recorded_with: VCR 2.9.3

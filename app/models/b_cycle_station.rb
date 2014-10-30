@@ -13,6 +13,4 @@ class BCycleStation < ActiveRecord::Base
   def full_street_address
     "#{address_line1} #{city} #{state} #{zip}"
   end
-
-
 end
