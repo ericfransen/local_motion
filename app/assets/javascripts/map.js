@@ -35,6 +35,7 @@
         identifier: locations[i][3],
         content: '<p><strong>'+locations[i][0]+'</strong></p><p>'+
                  'interior: '+locations[i][4]+'  |  exterior: ' +locations[i][5]+'</p><p>'+
+                 'fuel: '+locations[i][6]+'% full</p><p>'+
                  '<a href="https://www.google.com/maps/dir/'+userLat+','+userLon+'/'+locations[i][0]+
                  '" target="_blank" class="button [tiny small large]">Get Directions</a></p>'
       });
