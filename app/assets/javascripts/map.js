@@ -31,7 +31,7 @@
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map,
-        icon: 'assets/car2go_icon.png',
+        icon: 'assets/car2go_icon_2.png',
         identifier: locations[i][3],
         content: '<p><strong>'+locations[i][0]+'</strong></p><p>'+
                  'interior: '+locations[i][4]+'  |  exterior: ' +locations[i][5]+'</p><p>'+
@@ -48,6 +48,12 @@
       })(marker, i));
       car2GoMarkers.push(marker);
     }
+
+    userMarker = new google.maps.Marker({
+      position: new google.maps.LatLng(userLat, userLon),
+      map: map,
+      content: '<p><strong>ME</strong></p>'
+    });
 
   }
 
