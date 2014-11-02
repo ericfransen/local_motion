@@ -8,7 +8,7 @@ class BCycleStation < ActiveRecord::Base
     address_parts.any?{|a| send "#{a}_changed?"}
   end
 
-  private
+  # private
 
   def full_street_address
     "#{address_line1} #{city} #{state} #{zip}"

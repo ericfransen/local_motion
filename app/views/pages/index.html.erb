@@ -30,7 +30,7 @@
 
   <div id="car2go">
     <div class="service-logo">
-      <img src="/assets/car2go_logo.png" alt="Car2Go Logo" class="car2go_logo">
+      <img src="/assets/car2go_logo.png" alt="car2go Logo" class="car2go_logo">
     <!-- <h5>Car2Go</h5> -->
     </div>
   </div>
@@ -52,9 +52,18 @@
       </ul>
     </div>
     <div class="service-actions">
-      <div class="button [tiny small large]">
+      <a href="#" data-reveal-id="myModal">GO</a>
+
+      <div id="myModal" class="reveal-modal" data-reveal>
+        <h2>Book an UBER</h2>
+        <p class="lead">Ability to book UBER through this app is unavailable at this time.</p>
+        <p>This feature is coming soon, in the meantime click here to book:</p>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+      <!-- <div class="button [tiny small large]">
         GO
-      </div>    </div>
+      </div>     -->
+    </div>
   </div>
 </div>
 
@@ -75,7 +84,8 @@
     ["<%= bcycle.station_name %>",
       <%= bcycle.num_docks %>,
       <%= bcycle.latitude %>,
-      <%= bcycle.longitude %>],
+      <%= bcycle.longitude %>,
+     "<%= bcycle.full_street_address %>"],
   <% end %>
   ];
 </script>

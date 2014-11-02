@@ -55,8 +55,11 @@
       content: '<p><strong>ME</strong></p>'
     });
 
-
-
+    destinationMarker = new google.maps.Marker({
+      position: new google.maps.LatLng(userLat, userLon),
+      map: map,
+      content: '<p><strong>DESTINATION</strong></p>'+'<p>X miles away</p>'
+    });
 
     var bCycleMarkers = [],
         bounds = new google.maps.LatLngBounds(),
@@ -66,11 +69,11 @@
       bCycleMarker = new google.maps.Marker({
         position: new google.maps.LatLng(bCycles[i][2], bCycles[i][3]),
         map: map,
-        icon: 'assets/b_cycle_icon.png',
+        icon: 'assets/b_cycle_icon_48.png',
         identifier: bCycles[i][0],
-        content: '<p><strong>'+bCycles[i][0]+'</strong></p><p>'+
-                 'number of docks: '+bCycles[i][1]+'</p><p>'+
-                 '<a href="https://www.google.com/maps/dir/'+userLat+','+userLon+'/'+
+        content: '<p><strong>'+bCycles[i][0]+'</strong></p><p>'
+                 +bCycles[i][1]+' bike docks</p><p>'+
+                 '<a href="https://www.google.com/maps/dir/'+userLat+','+userLon+'/'+bCycles[i][4]+
                  '" target="_blank" class="button [tiny small large]">Get Directions</a></p>'
       });
 
