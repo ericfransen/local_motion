@@ -1,10 +1,12 @@
+
+
 <% if current_user %>
 
   <div id="bg">
     <div id="welcome-container">
       <div id="welcome-bg"></div>
       <div id="welcome">
-        <h2>Get started:</h2>
+        <h2 class="raleway">Get started:</h2>
           <%= link_to "Use My Location", new_trip_path, {:class=>"button [secondary success alert]" } %>
       </div>
     </div>
@@ -13,10 +15,11 @@
 <% else %>
 
   <div id="bg">
+  <div class="title_text">local motion</div>
     <div id="welcome-container">
       <div id="welcome-bg"></div>
       <div id="welcome">
-        <h2>Find the best ride share options nearest you</h2>
+        <h2>See the best ride share options nearest you</h2>
         <%= link_to "Log in with UBER", '/auth/uber', {:class=>"button [secondary success alert]" } %>
       </div>
     </div>

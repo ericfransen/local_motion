@@ -43,6 +43,7 @@
   padding: 20px;
   background: rgb(34,34,34); /* for IE */
   background: rgba(34,34,34,0.05);
+  // h2 { font-family: "Raleway"; }
 }
 
 @media (max-width: 600px ) {
@@ -55,3 +56,15 @@
                                          font-weight: normal; }
 #welcome h2 { margin-bottom: 50px }
 #welcome h5 { margin-top: 70px }
+
+
+.title_text {
+  position: absolute;
+  z-index: 1;
+  font-size: 6rem;
+  font-weight: 500;
+  letter-spacing:2px;
+  color: white;
+  font-family: "Raleway";
+
+}

@@ -23,7 +23,7 @@
 
     var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
-    var allMarkers = [],
+    var car2GoMarkers = [],
         bounds = new google.maps.LatLngBounds(),
         infowindow = new google.maps.InfoWindow(),
         marker;
@@ -31,6 +31,7 @@
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map,
+        icon: 'assets/car2go_icon.png',
         identifier: locations[i][3],
         content: '<p><strong>'+locations[i][0]+'</strong></p><p>'+
                  'interior: '+locations[i][4]+'  |  exterior: ' +locations[i][5]+'</p><p>'+
@@ -45,8 +46,9 @@
           infowindow.open(map, marker);
         }
       })(marker, i));
-      allMarkers.push(marker);
+      car2GoMarkers.push(marker);
     }
+
   }
 
   if (navigator.geolocation) {
