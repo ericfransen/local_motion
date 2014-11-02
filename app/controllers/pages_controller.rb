@@ -11,7 +11,10 @@ class PagesController < ApplicationController
   end
 
   def index
-    @dest_add  = current_user.trips.last.destination_location.address
+    @dest_add     = current_user.trips.last.destination_location.address
+    @dest_add_lat = current_user.trips.last.destination_location.latitude
+    @dest_add_lon = current_user.trips.last.destination_location.longitude
+
     # @uber_time = Uber.new.get_time_estimate(current_user.trips.last.starting_location.latitude,
     #                                         current_user.trips.last.destination_location.longitude)
     #

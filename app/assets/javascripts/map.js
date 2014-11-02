@@ -52,12 +52,15 @@
     userMarker = new google.maps.Marker({
       position: new google.maps.LatLng(userLat, userLon),
       map: map,
-      content: '<p><strong>ME</strong></p>'
+      icon: 'assets/user_start_icon.png',
+      flat: true,
+      title: 'MY LOCATION',
     });
 
     destinationMarker = new google.maps.Marker({
-      position: new google.maps.LatLng(userLat, userLon),
+      position: new google.maps.LatLng(destAddLat, destAddLon),
       map: map,
+      title: 'MY DESTINATION',
       content: '<p><strong>DESTINATION</strong></p>'+'<p>X miles away</p>'
     });
 
