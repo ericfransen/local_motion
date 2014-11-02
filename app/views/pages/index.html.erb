@@ -57,6 +57,7 @@
       </div>    </div>
   </div>
 </div>
+
 <script type="text/javascript">
   var locations = [
   <% @car2go.each do |car| %>
@@ -71,10 +72,10 @@
 
   var bCycles = [
   <% @b_cycle_stations.each do |bcycle| %>
-    ["<%= bcycle["station_name"] %>",
-      <%= bcycle["num_docks"] %>,
-      <%= bcycle["latitude"] %>,
-      <%= bcycle["longitude"] %>],
+    ["<%= bcycle.station_name %>",
+      <%= bcycle.num_docks %>,
+      <%= bcycle.latitude %>,
+      <%= bcycle.longitude %>],
   <% end %>
   ];
 </script>

@@ -64,14 +64,14 @@
         bCycleMarker;
     for (i = 0; i < bCycles.length; i++) {
       bCycleMarker = new google.maps.Marker({
-        position: new google.maps.LatLng(bCycles[2], bCycles[3]),
+        position: new google.maps.LatLng(bCycles[i][2], bCycles[i][3]),
         map: map,
-        icon: 'assets/b_cycle_logo.jpg',
-        // identifier: locations[i][3],
-        // content: '<p><strong>'+locations[i][0]+'</strong></p><p>'+
-        //          'interior: '+locations[i][4]+'  |  exterior: ' +locations[i][5]+'</p><p>'+
-        //          '<a href="https://www.google.com/maps/dir/'+userLat+','+userLon+'/'+locations[i][0]+
-        //          '" target="_blank" class="button [tiny small large]">Get Directions</a></p>'
+        icon: 'assets/b_cycle_icon.png',
+        identifier: bCycles[i][0],
+        content: '<p><strong>'+bCycles[i][0]+'</strong></p><p>'+
+                 'number of docks: '+bCycles[i][1]+'</p><p>'+
+                 '<a href="https://www.google.com/maps/dir/'+userLat+','+userLon+'/'+
+                 '" target="_blank" class="button [tiny small large]">Get Directions</a></p>'
       });
 
       bounds.extend(bCycleMarker.position);
