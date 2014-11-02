@@ -26,6 +26,8 @@ task :import_bcycle => [:environment] do
       :state => row[9],
       :zip => row[10]
     })
+    sleep 0.25
+    puts "Storing and geocoding # #{BCycleStation.count}"
   end
 
   puts "Done."

@@ -68,4 +68,13 @@
      "<%= car["exterior"] %>"],
   <% end %>
   ];
+
+  var bCycles = [
+  <% @b_cycle_stations.each do |bcycle| %>
+    ["<%= bcycle["station_name"] %>",
+      <%= bcycle["num_docks"] %>,
+      <%= bcycle["latitude"] %>,
+      <%= bcycle["longitude"] %>],
+  <% end %>
+  ];
 </script>

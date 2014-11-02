@@ -55,6 +55,38 @@
       content: '<p><strong>ME</strong></p>'
     });
 
+
+
+
+    var bCycleMarkers = [],
+        bounds = new google.maps.LatLngBounds(),
+        infowindow = new google.maps.InfoWindow(),
+        bCycleMarker;
+    for (i = 0; i < bCycles.length; i++) {
+      bCycleMarker = new google.maps.Marker({
+        position: new google.maps.LatLng(bCycles[2], bCycles[3]),
+        map: map,
+        icon: 'assets/b_cycle_logo.jpg',
+        // identifier: locations[i][3],
+        // content: '<p><strong>'+locations[i][0]+'</strong></p><p>'+
+        //          'interior: '+locations[i][4]+'  |  exterior: ' +locations[i][5]+'</p><p>'+
+        //          '<a href="https://www.google.com/maps/dir/'+userLat+','+userLon+'/'+locations[i][0]+
+        //          '" target="_blank" class="button [tiny small large]">Get Directions</a></p>'
+      });
+
+      bounds.extend(bCycleMarker.position);
+      google.maps.event.addListener(bCycleMarker, 'click', (function(bCycleMarker, i) {
+        return function() {
+          infowindow.setContent(bCycleMarker.content);
+          infowindow.open(map, bCycleMarker);
+        }
+      })(bCycleMarker, i));
+      bCycleMarkers.push(bCycleMarker);
+    }
+
+
+
+
   }
 
   if (navigator.geolocation) {

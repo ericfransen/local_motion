@@ -19,7 +19,8 @@ class PagesController < ApplicationController
     #                                           current_user.trips.last.starting_location.longitude,
     #                                           current_user.trips.last.destination_location.latitude,
     #                                           current_user.trips.last.destination_location.longitude)
-    @car2go = Car2go.get_cars                                          
+    @car2go = Car2go.get_cars
+    @b_cycle_stations = BCycleStation.all                                        
   end
 
 private
