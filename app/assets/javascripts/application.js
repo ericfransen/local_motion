@@ -17,3 +17,8 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+$(document).ready(function(){
+    // fade $alertBox out after 1 second (1000 ms)
+    $('.alert-box').delay(1000).fadeOut('slow');
+});

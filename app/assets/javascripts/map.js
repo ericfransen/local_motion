@@ -6,11 +6,6 @@
   });
 
   function initialize() {
-    // if (user_location) {
-    //   var mapOptions = { center: user_location };
-    // } else {
-    //   window.location('/trip/new');
-    // }
     if (typeof userLat  == 'undefined') { userLat  = 39.7392; }
     if (typeof userLon  == 'undefined') { userLon  = -104.9847; }
     if (typeof zoom_amt == 'undefined') { zoom_amt = 12 }
@@ -53,7 +48,7 @@
     userMarker = new google.maps.Marker({
       position: new google.maps.LatLng(userLat, userLon),
       map: map,
-      icon: 'assets/user_start_icon.png',
+      icon: 'assets/pin-green-48.png',
       flat: true,
       title: 'MY LOCATION',
     });
@@ -61,6 +56,7 @@
     destinationMarker = new google.maps.Marker({
       position: new google.maps.LatLng(destAddLat, destAddLon),
       map: map,
+      icon: 'assets/pin-red-48.png',
       title: 'MY DESTINATION',
       content: '<p><strong>DESTINATION</strong></p>'+'<p>X miles away</p>'
     });
@@ -90,9 +86,6 @@
       })(bCycleMarker, i));
       bCycleMarkers.push(bCycleMarker);
     }
-
-
-
 
   }
 

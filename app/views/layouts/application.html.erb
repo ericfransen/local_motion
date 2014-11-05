@@ -17,9 +17,11 @@
   <body>
 
     <%= render partial: 'layouts/navbar' %>
-    <% flash.each do |name, msg| %>
+    <%= render partial: 'layouts/flash' %>
+
+    <!-- <% flash.each do |name, msg| %>
       <%= content_tag(:div, msg, class: "alert alert-info") %>
-    <% end %>
+    <% end %> -->
 
     <%= yield %>
     <%= javascript_include_tag "application" %>

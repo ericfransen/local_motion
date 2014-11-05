@@ -1,0 +1,23 @@
+.alert-box.success{
+  width: 50%;
+  margin: auto;
+  background-color: #FF6D00;
+  border-color: #FF6D00;
+  margin-top: 20px;
+}
+
+.alert-box.failure {
+  width: 50%;
+  margin: auto;
+}
+
+.alert-box.warning {
+  width: 50%;
+  margin: auto;
+  background-color: #FF6D00;
+  border-color: #FF6D00;
+  margin-top: 20px;
+  position: fixed;
+  left: 25%;
+
+}
