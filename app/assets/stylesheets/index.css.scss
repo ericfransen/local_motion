@@ -42,9 +42,16 @@
 }
 
 #car2go {
-  height: 20.0%;
-  background: #009be0;
   // overflow: auto;
+  display: flex;
+  align-items: center;
+  height:20.0%;
+  background: #009be0;
+  li { color: white;
+       font-family: 'Syncopate', sans-serif;
+       list-style-type: none;
+       text-align: center;}
+
 }
 
 #uber {
@@ -52,12 +59,22 @@
   align-items: center;
   height:20.0%;
   background: black;
-  li { color: #c0c0c8; font-family: 'Syncopate', sans-serif; list-style-type: none;}
+  li { color: #c0c0c8;
+       font-family: 'Syncopate', sans-serif;
+       list-style-type: none;
+       text-align: center;}
+}
+
+.car2go_style {
+  color: white;
+  font-family: 'Syncopate', sans-serif; list-style-type: none;
+  text-align: center;
 }
 
 .uber_style {
   color: #c0c0c8;
   font-family: 'Syncopate', sans-serif; list-style-type: none;
+  text-align: center;
 }
 
 // .b_cycle_logo {
@@ -96,6 +113,13 @@
   margin-left: 2em;
   text-align: center;
   h1, h3 { color: #c41231; font-family: 'Syncopate', sans-serif; }
+}
+
+#car2go_price {
+  flex: 1;
+  text-align: center;
+  h2, h3, { color: white; font-family: 'Syncopate', sans-serif; }
+  h5 { color: white; font-family: 'Syncopate', sans-serif; }
 }
 
 #uber_price {
@@ -141,7 +165,7 @@
   #sidebar {
     position:relative;
     float: left;
-    margin-top: 70%;
+    margin-top: 85%;
     left: 0%;
     width: 100%;
     // min-width: 380px;
