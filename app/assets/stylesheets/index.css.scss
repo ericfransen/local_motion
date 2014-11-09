@@ -18,10 +18,8 @@
 
 #profile {
   height: 40.0%;
-  // background: #74c994;
-  // color: #073763;
-  // background: #073763;
-  background: #2f3f43;
+  background: #2b313d;
+  // background: #363d42;
   padding: 20px;
   h5 { color: #9fc5e8;}
   text-align: center;
@@ -36,7 +34,7 @@
   margin-top:90px;
   outline: 0;
   border: 0;
-  background: transparent;
+  background: #3f454a;
   padding: 20px;
 }
 
@@ -108,13 +106,14 @@
   position: absolute;
   margin-left: 2em;
   text-align: center;
-  h1, h3 { color: #c41231; font-family: 'Syncopate', sans-serif;}
+  h1, h3 { color: #c41231; font-family: 'Syncopate', sans-serif; }
 }
 
 #uber_price {
   flex: 1;
   text-align: center;
-  h2, h3 { color: #c0c0c8; font-family: 'Syncopate', sans-serif;}
+  h2, h3, { color: #c0c0c8; font-family: 'Syncopate', sans-serif; }
+  h5 { color: #009be0; font-family: 'Syncopate', sans-serif; }
 }
 
 .service-logo {

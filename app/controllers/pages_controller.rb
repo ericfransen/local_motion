@@ -15,13 +15,17 @@ class PagesController < ApplicationController
     @dest_add_lat = current_user.trips.last.destination_location.latitude
     @dest_add_lon = current_user.trips.last.destination_location.longitude
 
-    # @uber_time = Uber.new.get_time_estimate(current_user.trips.last.starting_location.latitude,
-    #                                         current_user.trips.last.destination_location.longitude)
-    #
-    # @uber_price = Uber.new.get_price_estimate(current_user.trips.last.starting_location.latitude,
-    #                                           current_user.trips.last.starting_location.longitude,
-    #                                           current_user.trips.last.destination_location.latitude,
-    #                                           current_user.trips.last.destination_location.longitude)
+    @uber_time = Uber.new.get_time_estimate(current_user.trips.last.starting_location.latitude,
+                                            current_user.trips.last.destination_location.longitude)
+    @uber_trip = Uber.new.get_uber_trip(current_user.trips.last.starting_location.latitude,
+                                        current_user.trips.last.starting_location.longitude,
+                                        current_user.trips.last.destination_location.latitude,
+                                        current_user.trips.last.destination_location.longitude)
+    @uber_price = "#{@uber_trip[:uber_low_price]} - #{@uber_trip[:uber_hi_price]}"
+    @uber_ride_time = @uber_trip[:uber_trip_time] / 60
+    @uber_total_time = @uber_time + @uber_ride_time
+    @uber_surge = @uber_trip[:surge_multiplier]
+
     @car2go = Car2go.get_cars
     @b_cycle_stations = BCycleStation.all
   end
