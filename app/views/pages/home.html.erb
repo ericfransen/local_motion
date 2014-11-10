@@ -14,15 +14,84 @@
 
 <% else %>
 
-  <div id="bg">
   <div class="title_text">local motion</div>
+  <div id="bg">
     <div id="welcome-container">
       <div id="welcome-bg"></div>
       <div id="welcome">
-        <h2>See the best ride share options nearest you</h2>
+        <h2 class='raleway'>See the best ride share options nearest you</h2>
         <%= link_to "Log in with UBER", '/auth/uber', {:class=>"button [secondary success alert]" } %>
+      <div class="raleway" id="free_30_call"><a href="/#free_30">Get Started For Free</a></div>
       </div>
     </div>
+  </div>
+
+<div class="below_title"></div>
+  <div class="solid_background">
+    <div class="description_title raleway">Get Moving</div>
+    <div class="description_content">
+      local motion is the best way to see your options when it comes to making a
+      quick local trip around town.
+      local motion shows you what options are closest to your current location
+      and breaks each one down based on time and price estimates for your trip.
+
+      </br></br><strong>Currently Serving Denver</strong>
+      The most popular ride sharing options in Denver that we are providing are:
+      UBER, car2go, and B-cycle.
+      We love our Denver folk and are working to create the best possible experience
+      for you. local motion is currently only available in Denver, but don't fret
+      if you're not one of the Denver elite, we'll be expanding soon. To be notified
+      when we launch in your city, just enter your email here:
+      <strong><a href="#" data-reveal-id="myModal">Notify Me</a></strong>
+
+        <div id="myModal" class="reveal-modal" data-reveal>
+          <h2> Be first to know when <span class='raleway'>local motion</span> drops in your city</h2>
+
+          <form>
+            <div class="row">
+              <div class="large-12 columns">
+                  <input type="text" placeholder="email" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-4 columns">
+                <label>Your City:
+                  <input type="text" placeholder="City, State" />
+                </label>
+              </div>
+            </div>
+            <div class="row">
+            </div>
+              <div class="large-6 columns">
+                <label>Stay connected with our mailing letter:</label>
+                <input id="checkbox1" type="checkbox"><label for="checkbox1">Awesome!</label>
+              </div>
+              <a href="#" class="button [radius round]">Tell Me!</a>
+          </form>
+
+          <a class="close-reveal-modal">&#215;</a>
+            </div>
+        </div>
+    </div>
+    <div class="wide_image description_image">
+      <img src='assets/city_street.jpg' alt="city street">
+    </div>
+
+    <div class="description_title raleway" id="free_30">First Ride Free</div>
+    <div class="description_content">
+      <strong>Don't have an UBER account?</strong></br>
+      Sign up today and receive a $30 credit toward UBER and get moving with
+      local motion today:
+      <strong><a href="https://www.uber.com/invite/uberlocalmotion">Get $30</a></strong>
+    </div>
+  </div>
+
+  <div class="footer raleway">
+  </br>
+    <p>
+      Developed by <a href="https://twitter.com/eric_fransen">Eric Fransen</a>.
+      This app uses APIs by but is not endorsed or certified by UBER or car2go.
+    </p>
   </div>
 
 <% end %>

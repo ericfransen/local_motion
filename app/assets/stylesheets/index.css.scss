@@ -1,3 +1,5 @@
+$bcycle_color: red;
+
 #sidebar {
   position: fixed;
   top: 45px;
@@ -7,24 +9,19 @@
   background: #073763;
 }
 
-// @media (max-width: 766px) {
-//   #sidebar {
-//     position:relative;
-//     float: none;
-//     min-width: 380px;
-//   }
-// }
-
-
 #profile {
   height: 40.0%;
-  // background: #74c994;
-  // color: #073763;
-  // background: #073763;
-  background: #2f3f43;
+  background: #2b313d;
   padding: 20px;
-  h5 { color: #9fc5e8;}
+  h5 { color: #9fc5e8; }
   text-align: center;
+}
+
+.profile_pic {
+  height: 75px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
 }
 
 .dest_input {
@@ -36,20 +33,32 @@
   margin-top:90px;
   outline: 0;
   border: 0;
-  background: transparent;
+  background: #3f454a;
   padding: 20px;
 }
 
 #bcycle {
-  height: 20.0%;
+  display: flex;
+  align-items: center;
+  height:20.0%;
   background: white;
-  // vertical-align: middle;
+  li { color: $bcycle_color;
+       font-family: 'raleway', sans-serif;
+       list-style-type: none;
+       text-align: center;}
 }
 
 #car2go {
-  height: 20.0%;
+  // overflow: auto;
+  display: flex;
+  align-items: center;
+  height:20.0%;
   background: #009be0;
-  overflow: auto;
+  li { color: white;
+       font-family: 'raleway', sans-serif;
+       list-style-type: none;
+       text-align: center;}
+
 }
 
 #uber {
@@ -57,25 +66,28 @@
   align-items: center;
   height:20.0%;
   background: black;
-  li { color: #c0c0c8; font-family: 'Syncopate', sans-serif; list-style-type: none;}
+  li { color: #c0c0c8;
+       font-family: 'raleway', sans-serif;
+       list-style-type: none;
+       text-align: center;}
 }
 
-.same {
+.bcycle_style {
+  color: $bcycle_color;
+  font-family: 'raleway', sans-serif; list-style-type: none;
+  text-align: center;
+}
+
+.car2go_style {
+  color: white;
+  font-family: 'raleway', sans-serif; list-style-type: none;
+  text-align: center;
+}
+
+.uber_style {
   color: #c0c0c8;
-  font-family: 'Syncopate', sans-serif; list-style-type: none;
-}
-
-.profile_pic {
-  height: 75px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-}
-
-
-
-.service_info {
-  display: flex;
+  font-family: 'raleway', sans-serif; list-style-type: none;
+  text-align: center;
 }
 
 // .b_cycle_logo {
@@ -89,35 +101,70 @@
 //   // margin-bottom: 30px;
 // }
 
-// .car2go_logo {
-//   // width: 60px;
-//   height: 60px;
-//   margin-left: 1em;
-//   // border-radius: 50%;
-//   // background-image: image-url("car2go_logo.jpg");
-//   background-size: cover;
-// }
+.bcycle_logo {
+  width: 100%;
+  height: 60px;
+  // padding: 1em;
+  // margin-left: 1em;
+  background-image: image-url("car2go_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-// .uber_logo {
-//   width: 60px;
-//   margin-left: 1em;
-//   // vertical-align: center;
-// }
+.car2go_logo {
+  width: 100%;
+  height: 60px;
+  // padding: 1em;
+  // margin-left: 1em;
+  background-image: image-url("car2go_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.uber_logo {
+  width: 100%;
+  height: 60px;
+  // padding: 1em;
+  // margin-left: 1em;
+  background-image: image-url("uber_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 #bcycle_price {
-  position: absolute;
-  margin-left: 2em;
+  // position: absolute;
+  // margin-left: 2em;
+  // text-align: center;
+  // h1, h3 { color: #c41231; font-family: 'raleway', sans-serif; }
+
+  flex: 1;
   text-align: center;
-  h1, h3 { color: #c41231; font-family: 'Syncopate', sans-serif;}
+  h2, h3, { color: $bcycle_color; font-family: 'raleway', sans-serif; }
+  h5 { color: $bcycle_color; font-family: 'raleway', sans-serif; }
+}
+
+#car2go_price {
+  flex: 1;
+  text-align: center;
+  h2, h3, { color: white; font-family: 'raleway', sans-serif; }
+  h5 { color: white; font-family: 'raleway', sans-serif; }
+}
+
+#car2go_price {
+  flex: 1;
+  text-align: center;
+  h2, h3, { color: white; font-family: 'raleway', sans-serif; }
+  h5 { color: white; font-family: 'raleway', sans-serif; }
 }
 
 #uber_price {
   flex: 1;
   text-align: center;
-  h2, h3 { color: #c0c0c8; font-family: 'Syncopate', sans-serif;}
+  h2, h3, { color: #c0c0c8; font-family: 'raleway', sans-serif; }
+  h5 { color: #009be0; font-family: 'raleway', sans-serif; }
 }
 
-.service-logo {
+.service-logo a {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -133,10 +180,29 @@
 
 .service-time {
   color: #fff;
-  display: flex;
+  // display: flex;
 }
 
-//
-// #uber .service-time {
-//   color: red;
-// }
+@media (max-width: 766px) {
+  .show_map {
+    width: 100%;
+    left: 100%;
+    height: 70%;
+  }
+  #map-canvas {
+    width: 155%;
+  }
+  // .car2go_logo {
+  //   width: 100%;
+  //   height: 100%;
+  //   overflow:hidden;
+  // }
+  #sidebar {
+    position: relative;
+    float: left;
+    margin-top: 85%;
+    left: 0%;
+    width: 100%;
+    // min-width: 380px;
+  }
+}

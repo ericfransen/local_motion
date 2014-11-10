@@ -6,58 +6,116 @@
 <div id="sidebar">
   <div id="profile">
     <img src='<%= current_user.picture_url %>' alt="UBER Profile Pic" class="profile_pic">
-    <h5><%= @current_user.first_name %></h5>
+    <h5 class='raleway'><%= @current_user.first_name %></h5>
     <input class="dest_input" placeholder="<%= @dest_add %>" autofocus>
   </div>
 
-  <div id="bcycle">
-    <div class="service-logo">
-      <img src="/assets/b_cycle_logo.jpg" alt="B-Cycle Logo" class="b_cycle_logo">
+  <div id="bcycle" class="row">
+    <div class="service-logo small-3 large-3 columns">
+      <a href="#" data-reveal-id="bcycle_Modal">
+        <img src="/assets/b_cycle_logo.jpg" alt="B-cycle Logo" class="bcycle_logo">
+      </a>
     </div>
-    <!-- <div id="bcycle_price">
-      <h1>$</h1>
-      <h3><%= "8" %></h3>
-    </div>
-    <div id="time">
-      <h1><i class="foundicon-[clock]"></i></h1>
-      <h3><%= "X" %> MIN</h3>
-      <hr noshade size=1>
-      <h5><%= "X" %> MIN walk</h5>
-      <h5><%= "X" %> MIN ride</h5>
-    </div> -->
-
-  </div>
-
-  <div id="car2go">
-    <div class="service-logo">
-      <img src="/assets/car2go_logo.png" alt="car2go Logo" class="car2go_logo">
-    <!-- <h5>Car2Go</h5> -->
-    </div>
-  </div>
-
-  <div id="uber" class="row">
-    <div class="service-logo">
-      <img src="/assets/uber_logo.png" alt="UBER Logo" class="uber_logo">
-    </div>
-    <div id="uber_price" class="service-price">
+    <div id="bcycle_price" class="service-price small-4 large-4 columns">
       <h2>$</h2>
-      <h3><%= "0" %></h3>
+      <h3><%= '8' %></h3>
     </div>
-    <div id="uber_time" class="service-time">
-      <h1><i class="foundicon-[clock]"></i></h1>
+    <div class="service-time small-5 large-5 columns">
       <ul>
-        <h2 class="same"><%= "X" %> MIN</h2>
-        <li><%= "0" %> MIN wait</li>
-        <li><%= "X" %> MIN ride</li>
+        <h3 class="bcycle_style"><%= '-' %> MIN</h3>
+        <li><%= '-' %> MIN walk</li>
+        <li><%= '-' %> MIN ride</li>
+        <li><%= '-' %> MIN walk</li>
       </ul>
     </div>
-    <div class="service-actions">
-      <a href="#" data-reveal-id="myModal">GO</a>
 
-      <div id="myModal" class="reveal-modal" data-reveal>
-        <h2>Book an UBER</h2>
-        <p class="lead">Ability to book UBER through this app is unavailable at this time.</p>
-        <p>This feature is coming soon, in the meantime click here to book:</p>
+    <div class="service-actions">
+      <!-- <a href="#" data-reveal-id="myModal">GO</a> -->
+      <div id="bcycle_Modal" class="reveal-modal" data-reveal>
+        <h2 class='raleway'>B-cycle Settings</h2>
+        <div class="large-6 columns">
+          <label>I'm a current B-cycle member:</label>
+          <input id="checkbox1" type="checkbox"><label for="checkbox1">Sure Am</label>
+        </div>
+        <p class='lead raleway'>B-cycle does not provide the ability to reserve B-cycles remotely.</p>
+        <p class='raleway'>If you are not a current B-cycle member, you can sign up here:</p>
+        <a href="https://denver.bcycle.com/joinnow.aspx" class="button [tiny]">Sign Up</a>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div id="car2go" class="row">
+    <div class="service-logo small-3 large-3 columns">
+      <a href="#" data-reveal-id="car2go_Modal">
+        <img src="/assets/car2go_logo.png" alt="car2go Logo" class="car2go_logo">
+      </a>
+    </div>
+    <div id="car2go_price" class="service-price small-4 large-4 columns">
+      <h2>$</h2>
+      <h3><%= '-' %></h3>
+    </div>
+    <div class="service-time small-5 large-5 columns">
+      <ul>
+        <h3 class="car2go_style"><%= '-' %> MIN</h3>
+        <li><%= '-' %> MIN walk</li>
+        <li><%= '-' %> MIN drive</li>
+      </ul>
+    </div>
+
+    <div class="service-actions">
+      <!-- <a href="#" data-reveal-id="myModal">GO</a> -->
+      <div id="car2go_Modal" class="reveal-modal" data-reveal>
+        <h2 class='raleway'>Reserve a car2go</h2>
+        <p class='lead raleway'>Ability to reserve a car2go through this app is unavailable at this time.</p>
+        <p class='raleway'>This feature is coming soon, in the meantime click here to reserve:</p>
+        <a href="https://play.google.com/store/apps/details?id=com.car2go&hl=en" class="button [tiny]">Android</a>
+        <a href="https://itunes.apple.com/us/app/car2go/id514921710?mt=8" class="button [tiny]">Apple</a>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div id="uber" class="row">
+    <div class="service-logo small-3 large-3 columns">
+      <a href="#" data-reveal-id="uber_Modal">
+        <img src="/assets/uber_logo.png" alt="UBER Logo" class="uber_logo">
+      </a>
+    </div>
+    <div id="uber_price" class="service-price small-4 large-4 columns">
+      <h2>$</h2>
+      <h3><%= @uber_price %></h3>
+      <% if @uber_surge > 1 %>
+        <h5>surge <%= @uber_surge %>x</h5>
+      <% end %>
+    </div>
+    <div class="service-time small-5 large-5 columns">
+      <ul>
+        <h3 class="uber_style"><%= @uber_total_time %> MIN</h3>
+        <li><%= @uber_time %> MIN wait</li>
+        <li><%= @uber_ride_time %> MIN ride</li>
+      </ul>
+    </div>
+
+    <div class="service-actions">
+      <!-- <a href="#" data-reveal-id="myModal">GO</a> -->
+      <div id="uber_Modal" class="reveal-modal" data-reveal>
+        <h2 class='raleway'>Book an UBER</h2>
+        <p class='lead raleway'>Ability to book UBER through this app is unavailable at this time.</p>
+        <p class='raleway'>This feature is coming soon, in the meantime click here to book:</p>
+        <a href="https://play.google.com/store/apps/details?id=com.ubercab&hl=en" class="button [tiny]">Android</a>
+        <a href="https://itunes.apple.com/us/app/uber/id368677368?mt=8" class="button [tiny]">Apple</a>
         <a class="close-reveal-modal">&#215;</a>
       </div>
     </div>

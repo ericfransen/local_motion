@@ -46,11 +46,6 @@
   // h2 { font-family: "Raleway"; }
 }
 
-@media (max-width: 600px ) {
-  #bg { padding: 10px; }
-  #welcome-bg { background-position: center -10px; }
-}
-
 #welcome h2, #welcome h5, #welcome h5 a { text-align: center;
                                                color: #fefefe;
                                          font-weight: normal; }
@@ -60,11 +55,62 @@
 
 .title_text {
   position: absolute;
-  z-index: 1;
+  height: 3rem;
+  left: 30%;
+  z-index: 100;
   font-size: 6rem;
   font-weight: 500;
   letter-spacing:2px;
   color: white;
   font-family: "Raleway";
+}
 
+
+// BELOW THE FOLD
+
+$side-margin: 2rem;
+
+.below_title {
+  width: 100%;
+  height: 45rem;
+}
+
+.description_title {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-left: $side-margin;
+}
+.description_content {
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 0 $side-margin;
+}
+.description_image {
+  background-image: url("assets/city_street.jpg");
+  margin: 7rem 0;
+}
+
+.wide_image {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#free_30_call {
+  a { color: white; }
+}
+
+.footer {
+  margin-top: 8rem;
+  height: 4rem;
+  background: #2b313d;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 600px ) {
+  #bg { padding: 10px; }
+  #welcome-bg { background-position: center -10px; }
+  .title_text { display: none; }
+  .footer { height: 6rem; }
 }

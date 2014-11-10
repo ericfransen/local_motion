@@ -1,14 +1,21 @@
 .alert-box.success{
   width: 50%;
-  margin: auto;
+  // margin: auto;
   background-color: #FF6D00;
   border-color: #FF6D00;
-  margin-top: 20px;
+  margin: 2rem auto 0 auto;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin: auto;
+  position: absolute;
+  z-index: 101;
 }
 
 .alert-box.failure {
   width: 50%;
   margin: auto;
+  position: absolute;
+  z-index: 101;
 }
 
 .alert-box.warning {
@@ -19,5 +26,7 @@
   margin-top: 20px;
   position: fixed;
   left: 25%;
+  position: absolute;
+  z-index: 101;
 
 }
