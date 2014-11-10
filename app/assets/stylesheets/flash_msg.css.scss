@@ -1,5 +1,5 @@
 .alert-box.success{
-  width: 100%;
+  width: 50%;
   // margin: auto;
   background-color: #FF6D00;
   border-color: #FF6D00;
@@ -8,14 +8,14 @@
   // margin-right: auto;
   // margin: auto;
   position: absolute;
-  z-index: 100;
+  z-index: 101;
 }
 
 .alert-box.failure {
   width: 50%;
   margin: auto;
   position: absolute;
-  z-index: 100;
+  z-index: 101;
 }
 
 .alert-box.warning {
@@ -27,6 +27,6 @@
   position: fixed;
   left: 25%;
   position: absolute;
-  z-index: 100;
+  z-index: 101;
 
 }
