@@ -22,6 +22,8 @@ gem 'coveralls', require: false
 gem 'httparty'
 gem 'geocoder'
 gem 'gmaps4rails'
+gem 'execjs'
+gem 'therubyracer'
 
 
 # gem 'thin'
