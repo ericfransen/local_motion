@@ -1,8 +1,12 @@
 class Car2go
 
-  def self.get_cars
+  def self.fetch_cars
     vehicle_locations = Rest.get(url: vehicle_locations_url, options: car_options)
     placemarks = vehicle_locations["placemarks"]
+    $redis.del("car2go_list")
+    placemarks.each do |placemark|
+      $redis.rpush('car2go_list', ActiveSupport::JSON.encode(placemark))
+    end
 
 # {"placemarks"=>
 #   [{"address"=>"E Arkansas Ave 2325, 80210 Denver",
@@ -14,6 +18,13 @@ class Car2go
 #     "name"=>"549XFI",
 #     "vin"=>"WMEEJ3BA3DK629824"},
 
+  end
+
+  def self.get_cars
+    placemarks = $redis.lrange('car2go_list', 0, $redis.llen('car2go_list'))
+    placemarks.map do |placemark|
+      ActiveSupport::JSON.decode(placemark)
+    end
   end
 
   private

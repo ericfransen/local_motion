@@ -24,6 +24,10 @@ gem 'geocoder'
 gem 'gmaps4rails'
 gem 'execjs'
 gem 'therubyracer'
+gem 'sidekiq'
+gem 'sidetiq'
+gem 'sinatra', '>= 1.3.0', :require => nil
+
 
 
 # gem 'thin'
@@ -52,7 +56,6 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
   gem 'skylight', '~> 0.3.20'
 end
 

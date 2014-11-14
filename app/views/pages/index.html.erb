@@ -5,7 +5,7 @@
 
 <div id="sidebar">
   <div id="profile">
-    <%= image_tag current_user.picture_url %>
+    <%= image_tag current_user.picture_url, class: 'profile_pic' %>
     <!--<img src='<%= current_user.picture_url %>' alt="UBER Profile Pic" class="profile_pic">-->
     <h5 class='raleway'><%= @current_user.first_name %></h5>
     <input class="dest_input" placeholder="<%= @dest_add %>" autofocus>
