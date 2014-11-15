@@ -6,7 +6,7 @@ $bcycle_color: red;
   bottom: 0px;
   left: 66%;
   width: 34%;
-  background: #073763;
+  background: #2b313d;
 }
 
 #profile {
@@ -183,7 +183,7 @@ $bcycle_color: red;
   // display: flex;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 766px), (max-height: 600px) {
   .show_map {
     width: 100%;
     left: 100%;

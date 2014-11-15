@@ -17,7 +17,12 @@ RSpec.describe Uber, :type => :class do
         end
       end
 
-      xit 'returns error message when it cannot return time estimate' do
+      it 'returns "-" (blank) when it cannot return time estimate' do
+        VCR.use_cassette('get_time_estimate_FAIL') do
+          uber = Uber.new
+          uber_x_time_arrival = uber.get_time_estimate(nil, nil)
+          expect(uber_x_time_arrival).to eq '-'
+        end
       end
     end
   end
@@ -41,7 +46,13 @@ RSpec.describe Uber, :type => :class do
         end
       end
 
-      xit 'returns error message when it cannot return price estimate' do
+      it 'returns "-" (blank) when it cannot return price estimate' do
+        VCR.use_cassette('get_price_estimate_FAIL') do
+          uber = Uber.new
+          uber_price_hash = uber.get_uber_trip(start_lat, start_lon, nil, nil)
+          expect(uber_price_hash).to eq '-'
+          # expect(uber_price_hash[:uber_hi_price]).to eq '-'
+        end
       end
     end
   end

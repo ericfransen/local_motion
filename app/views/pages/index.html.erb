@@ -14,6 +14,7 @@
   <div id="bcycle" class="row">
     <div class="service-logo small-3 large-3 columns">
       <a href="#" data-reveal-id="bcycle_Modal">
+        <!-- <%= link_to image_tag("b_cycle_logo.jpg", class: 'bcycle_logo') %> -->
         <img src="/assets/b_cycle_logo.jpg" alt="B-cycle Logo" class="bcycle_logo">
       </a>
     </div>
@@ -23,7 +24,7 @@
     </div>
     <div class="service-time small-5 large-5 columns">
       <ul>
-        <h3 class="bcycle_style"><%= '-' %> MIN</h3>
+        <h3 class="bcycle_style"><strong><%= '-' %> MIN</strong></h3>
         <li><%= '-' %> MIN walk</li>
         <li><%= '-' %> MIN ride</li>
         <li><%= '-' %> MIN walk</li>
@@ -63,7 +64,7 @@
     </div>
     <div class="service-time small-5 large-5 columns">
       <ul>
-        <h3 class="car2go_style"><%= '-' %> MIN</h3>
+        <h3 class="car2go_style"><strong><%= '-' %> MIN</strong></h3>
         <li><%= '-' %> MIN walk</li>
         <li><%= '-' %> MIN drive</li>
       </ul>
@@ -103,7 +104,7 @@
     </div>
     <div class="service-time small-5 large-5 columns">
       <ul>
-        <h3 class="uber_style"><%= @uber_total_time %> MIN</h3>
+        <h3 class="uber_style"><strong><%= @uber_total_time %> MIN</strong></h3>
         <li><%= @uber_time %> MIN wait</li>
         <li><%= @uber_ride_time %> MIN ride</li>
       </ul>
