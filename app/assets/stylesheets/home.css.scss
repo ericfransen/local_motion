@@ -111,9 +111,10 @@ $side-margin: 2rem;
   text-align: center;
 }
 
-@media (max-width: 600px ) {
+@media (max-width: 750px ) {
   #bg { padding: 10px; }
   #welcome-bg { background-position: center -10px; }
   .title_text { display: none; }
+  .middle_pic h1 { display: none; }
   .footer { height: 6rem; }
 }

@@ -22,18 +22,20 @@ class PagesController < ApplicationController
                                         current_user.trips.last.destination_location.latitude,
                                         current_user.trips.last.destination_location.longitude)
     if @uber_trip != '-'
-      @uber_price = "#{@uber_trip[:uber_low_price]} - #{@uber_trip[:uber_hi_price]}"
-      @uber_ride_time = @uber_trip[:uber_trip_time] / 60
+      @uber_price      = "#{@uber_trip[:uber_low_price]} - #{@uber_trip[:uber_hi_price]}"
+      @uber_ride_time  = @uber_trip[:uber_trip_time] / 60
       @uber_total_time = @uber_time + @uber_ride_time
-      @uber_surge = @uber_trip[:surge_multiplier]
+      @uber_surge      = @uber_trip[:surge_multiplier]
+
+      @car2go_price    = (@uber_trip[:uber_trip_time] / 60) * 0.41 #calc based on uber for now
     else
-      @uber_price = '-'
-      @uber_ride_time = '-'
+      @uber_price      = '-'
+      @uber_ride_time  = '-'
       @uber_total_time = '-'
-      @uber_surge = 0
+      @uber_surge      = 0
+
+      @car2go_price    = '-'
     end
-
-
 
     @car2go = Car2go.get_cars
     @b_cycle_stations = BCycleStation.all
