@@ -24,5 +24,4 @@
 /fixtures/vcr_cassettes/get_price_estimate.yml
 
 # Test Coverage
-/coverage/.last_run.json
-/coverage/.resultset.json
+/coverage/*.json
