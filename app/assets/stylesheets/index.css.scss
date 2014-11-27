@@ -1,6 +1,9 @@
 $bcycle_color: red;
 
-body { background: #333333; }
+.index_background {
+  background: #333333;
+  height: 100%;
+  }
 
 #sidebar {
   position: fixed;

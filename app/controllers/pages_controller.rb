@@ -27,7 +27,7 @@ class PagesController < ApplicationController
       @uber_total_time = @uber_time + @uber_ride_time
       @uber_surge      = @uber_trip[:surge_multiplier]
 
-      @car2go_price    = (@uber_trip[:uber_trip_time] / 60) * 0.41 #calc based on uber for now
+      @car2go_price    = ((@uber_trip[:uber_trip_time] / 60) * 0.41).round(2) #calc based on uber for now
     else
       @uber_price      = '-'
       @uber_ride_time  = '-'
