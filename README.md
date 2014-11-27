@@ -1,5 +1,3 @@
-== README
-
 ### LocalMotion
 
 You can find this app in production at:
@@ -71,3 +69,5 @@ bundle exec rspec
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+
+In order to deploy, you must have API keys for UBER, car2go, Google Maps
