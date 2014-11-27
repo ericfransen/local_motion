@@ -1,6 +1,10 @@
 == README
 
-### [LocalMotion]
+### LocalMotion
+
+You can find this app in production at:
+
+https://localmotion.me
 
 #### Pitch
 
@@ -29,11 +33,13 @@ travel ride sharing options and attempt to maintain a low-carbon footprint.
 * OAuth provider:
   Uber OAuth
 
-* Data.gov data & API use:
+* API use:
 - Uber API
 - Car2Go API
-- B-Cycle API
-- http://data.opencolorado.org/dataset/city-and-county-of-denver-b-cycle-stations
+- B-Cycle API is currently out of service:
+     - https://code.google.com/p/share-a-bike/wiki/BCycleAPI
+  Use open public data source:
+     - http://data.opencolorado.org/dataset/city-and-county-of-denver-b-cycle-stations
 
 * Other integrations:
 Google Maps
